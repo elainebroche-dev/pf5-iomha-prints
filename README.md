@@ -114,6 +114,7 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the project code after being pushed from Git. In addition, for this project GitHub was used for the agile development aspect through the use of User Stories (GitHub Issues) and tracking them on a Kanban board.
 -   [Django](https://www.djangoproject.com/) was used as the framework to support rapid and secure development of the application
+-   [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) used for account registration and authentication (version 0.41.0 installed because of project dependencies)
 
 
 to be written - list left here for reference
