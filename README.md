@@ -109,7 +109,7 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 
 ### Frameworks, Libraries & Programs Used  - to be written
 
--   [Google Fonts:](https://fonts.google.com/) used for the Lato font
+-   [Google Fonts:](https://fonts.google.com/) used for the Lato and Old Standard TT fonts
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the project code after being pushed from Git. In addition, for this project GitHub was used for the agile development aspect through the use of User Stories (GitHub Issues) and tracking them on a Kanban board.
