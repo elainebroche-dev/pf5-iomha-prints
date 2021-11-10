@@ -28,6 +28,8 @@ The Íomhá Prints project ???????? - to be written
 ### Existing Features
 
 - include SEO stuff and privacy policy info here.
+- discounts to be handled with boolean
+- new arrivals to be handled using added on date within a 3 month range
 
 -   __F01 to be written__
     
@@ -115,6 +117,7 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 -   [GitHub:](https://github.com/) is used as the respository for the project code after being pushed from Git. In addition, for this project GitHub was used for the agile development aspect through the use of User Stories (GitHub Issues) and tracking them on a Kanban board.
 -   [Django](https://www.djangoproject.com/) was used as the framework to support rapid and secure development of the application
 -   [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) used for account registration and authentication (version 0.41.0 installed because of project dependencies)
+-   [Pillow](https://pillow.readthedocs.io/en/stable/index.html) - Python Imaging Library used for image handling
 
 
 to be written - list left here for reference
@@ -292,15 +295,20 @@ Once code changes have been completed and tested on localhost, the application c
 
 ### Code 
 - Much of the coding and testing relies heavily on information in the "Boutique Ado" walkthrough in the Code Institue Building an E-Commerce Platform module. 
-- Code on how to ??? : [?????](??????)
+- Code to implement a bootstrap carousel was based on information found here : [W3 Schools Bootstrap Carousel](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp)
+- Code to make the carousel responsive was based on information found here : [Responsive Carousel](https://stackoverflow.com/questions/19582340/make-bootstraps-carousel-both-center-and-responsive)
+- Code to handle images and avoid distortion was based on information found here : [Image Scaling](https://stackoverflow.com/questions/5369301/css-image-scaling-to-fit-within-area-not-distort)
+- Code to set max-width for website was based on information found here : [Max Width Screen](https://stackoverflow.com/questions/9730263/setting-max-width-for-body-using-bootstrap)
+- Code on to use calc() in css was based on information found here : [CSS Tricks](https://css-tricks.com/a-complete-guide-to-calc-in-css/)
+
 
 ### Content 
-- To be written : [????](?????)
+- The website page layout look and feel were influed by [Dunnes Stores Website](https://www.dunnesstores.com/) and [Art Prints](https://artprints.ie/)
 
 ### Media 
 - The ??? font used was imported from [Google Fonts](https://fonts.google.com/)
 - Fontawesome was used for icons, including icons for ????? - [Font Awesome](https://fontawesome.com/)
-- The application favicon was created from the ???????" icon image on [Font Awesome](https://fontawesome.com/) 
+- The application favicon was created from the images icon on [Font Awesome](https://fontawesome.com/) and created using information found here : [Icon as Favicon](https://stackoverflow.com/questions/18156240/use-font-awesome-icon-as-favicon) and [Favicon Generator](https://gauger.io/fonticon/)
 - To be written ???????????????????
   
 ### Acknowledgments

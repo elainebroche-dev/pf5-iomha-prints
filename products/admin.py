@@ -9,7 +9,6 @@ class PrintAdmin(admin.ModelAdmin):
         'title',
         'artist',
         'category',
-        'orientation',
         'rating',
         'image',
         'added_on',
@@ -25,7 +24,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class PrintOptionAdmin(admin.ModelAdmin):
     list_display = (
-        'orientation',
         'size',
         'dimensions',
         'price',

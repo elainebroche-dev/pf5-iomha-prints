@@ -119,6 +119,49 @@ body {
     min-width: 320px;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.image-border {
+    padding:6px;
+    border: 2px solid black;
+}
+
+.print-title {
+    font-size:large;
+    letter-spacing: 0.05rem;
+}
+
+.image-flash {
+    position: absolute;
+    top: -3%;
+    right : -3%;
+    min-width: 20%;
+    border-radius: 4px;
+}
+
+.image-bkgd-hard {
+    background-color: #FFA500;
+}
+
+.discount {
+    
+    padding-top: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
