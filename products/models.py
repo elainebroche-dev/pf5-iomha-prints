@@ -16,6 +16,10 @@ class Category(models.Model):
         return self.name
 
 class Print(models.Model):
+    
+    class Meta:
+        ordering = ['sku']
+
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     title = models.CharField(max_length=254)

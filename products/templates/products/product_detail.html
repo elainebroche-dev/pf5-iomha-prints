@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    <div class="image-flash-detail image-bkgd-hard">
+                        <p class="discount">20% OFF</p>
+                    </div>
+                    {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid image-border" src="{{ product.image.url }}" alt="{{ product.title }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid image-border" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.title }}">
+                        </a>
+                    {% endif %}
+                </div>         
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <p class="mb-0 print-details">Title: {{ product.title }}</p>
+                    <p class="mt-0 print-details">Artist: {{ product.artist }}</p>
+
+                    <div class="row pb-4">
+                        <div class="col-4">
+                            {% if product.rating %}
+                            <div class="text-muted"><i class="fas fa-star mr-2"></i>{{ product.rating }} / 5</div>
+                            {% else %}
+                            <div class="text-muted">No Rating</div>
+                            {% endif %}
+                        </div>
+                        <div class="col-auto">
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'like_product' product.id %}" method="POST">
+                                {% csrf_token %}
+    
+                                {% if liked %}
+                                <strong><button type="submit" class="btn-like"><i
+                                        class="fas fa-heart"></i></button></strong>
+                                {% else %}
+                                <strong><button type="submit" class="btn-like"><i
+                                        class="far fa-heart"></i></button></strong>
+                                {% endif %}
+                            </form>
+                            {% else %}
+                                <strong><span class="text-secondary"><i class="far fa-heart"></i></span></strong>
+                            {% endif %}
+                                <strong><span class="text-secondary">{{ product.number_of_likes }} </span></strong>
+                        </div>
+                    </div>
+
+                    {% for option in options %}
+                    <div class="row mb-0 text-left ">
+                        <div class="col-auto ">{{ option.dimensions }}  </div>
+                        <div class="col-2 px-0 text-right">€{{ option.price }}</div>
+                    </div>
+                    {% endfor %}
+        
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

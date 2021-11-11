@@ -1,3 +1,9 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
 html {
     height: 100%;
 }
@@ -97,7 +103,7 @@ body {
 
 #title-logo {
     padding-left: 0rem;
-    font-family: Lato;
+    font-family: 'Lato';
 }
 
 .header-container {
@@ -136,13 +142,26 @@ body {
 
 .print-title {
     font-size:large;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.08rem;
+}
+
+.print-details {
+    font-size:x-large;
+    letter-spacing: 0.2rem;
 }
 
 .image-flash {
     position: absolute;
     top: -3%;
     right : -3%;
+    min-width: 20%;
+    border-radius: 4px;
+}
+
+.image-flash-detail {
+    position: absolute;
+    top: 7%;
+    right : 0;
     min-width: 20%;
     border-radius: 4px;
 }
@@ -160,6 +179,20 @@ body {
     font-weight: 600;
     text-align: center;
 
+}
+
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
 }
 
 /* -------------------------------- Media Queries */
@@ -202,16 +235,17 @@ body {
         padding-bottom: 15px;
         min-width:320px;
     }
+
+   
 }
 
 @media (max-width: 540px) {
     .bk-image {
         height : 380px;
     }
-}
 
-@media (max-width: 550px) {
-    #col-a {
-        padding-top: 1.5rem;
+    .header-container {
+        padding-bottom : 32px;
     }
 }
+

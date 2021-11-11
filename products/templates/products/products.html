@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
+                <h2 class="logo-font">Prints</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -26,12 +26,12 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href="" >
+                                <a href="{% url 'product_detail' product.id %}" >
                                     <img class="card-img-top img-fluid image-border" src="{{ product.image.url }}" alt="{{ product.title }}" >
                                 </a>
                                 {% else %}
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.title }}">
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid image-border" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.title }}">
                                 </a>
                                 {% endif %}
 
@@ -46,9 +46,15 @@
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
+                                        {% if product.number_of_likes %}
                                         <div class="col">
                                             <small class="text-muted"><i class="fas fa-heart mr-2"></i>{{ product.number_of_likes }}</small>
                                         </div>
+                                        {% else %}
+                                        <div class="col">
+                                            <small class="text-muted"><i class="far fa-heart mr-2"></i>{{ product.number_of_likes }}</small>
+                                        </div>
+                                        {% endif %}
                                         <div class="col-auto">
                                             {% if product.rating %}
                                             <small class="text-muted"><i class="fas fa-star mr-2"></i>{{ product.rating }} / 5</small>
