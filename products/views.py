@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.db.models import Q
-from .models import Print, PrintOption
+from .models import Print, PrintOption, Category
+from datetime import datetime, timedelta
 
 # Create your views here.
 
@@ -12,8 +13,24 @@ def all_products(request):
 
     products = Print.objects.all()
     query = None
+    categories = None
 
     if request.GET:
+        if 'discount' in request.GET:
+            products = products.filter(discount_applies=True)
+
+        # new arrivals will have an added_on date within the last 6 months
+        if 'newarrivals' in request.GET:
+            products = products.filter(added_on__gte=datetime.now()-timedelta(days=182))
+
+        if 'wishlist' in request.GET:
+            products = products.filter(likes__id=request.user.id)
+
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+ 
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -26,6 +43,7 @@ def all_products(request):
     context = {
         'products': products,
         'search_term': query,
+        'current_categories': categories,
     }
 
     return render(request, 'products/products.html', context)
