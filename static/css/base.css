@@ -209,6 +209,7 @@ a.category-badge > span.badge:hover {
     margin-top: -100px; /* Negative half of height. */
     margin-left: -21px; /* Negative half of width. */
     background-color: white;
+}
 
 .btt-link {
     cursor: pointer;
