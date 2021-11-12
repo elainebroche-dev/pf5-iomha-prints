@@ -1,8 +1,3 @@
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-  }
 
 html {
     height: 100%;
@@ -193,6 +188,30 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.category-badge {
+    letter-spacing: 0.2rem;
+    font-size: larger;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    position: fixed;
+    height: 42px;
+    width: 42px;
+    bottom : 10px;
+    left: 50%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -21px; /* Negative half of width. */
+    background-color: white;
+
+.btt-link {
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
