@@ -38,6 +38,6 @@ class Print(models.Model):
         return self.likes.count()
 
 class PrintOption(models.Model):
-    size = models.IntegerField(choices=SIZES)
+    size = models.IntegerField(choices=SIZES, unique=True)
     dimensions = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
