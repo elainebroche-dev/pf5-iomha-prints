@@ -1,11 +1,36 @@
 from decimal import Decimal
 from django.conf import settings
+from django.shortcuts import get_object_or_404
+from products.models import Print, PrintOption
 
 def bag_contents(request):
 
     bag_items = []
     total = 0
     product_count = 0
+    bag = request.session.get('bag', {})
+
+    for item_id, item_data in bag.items():
+        product = get_object_or_404(Print, pk=item_id)
+        for size, quantity in item_data['items_by_size'].items():
+            # get the price based on the size 
+            option = get_object_or_404(PrintOption, size=size)
+            price = option.price
+            dimensions = option.dimensions
+            # deduct 20% if this is a dicounted item
+            if product.discount_applies:
+                price = price / 5 * 4
+            total += quantity * price                           
+            product_count += quantity
+            bag_items.append({
+                'item_id': item_id,
+                'quantity': quantity,
+                'product': product,
+                'price': price,
+                'dimensions': dimensions,
+                'size': size,
+            })
+
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
