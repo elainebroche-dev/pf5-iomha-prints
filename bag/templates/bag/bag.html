@@ -43,10 +43,10 @@
                         </td>
                         <td class="py-3">
                             <p class="my-0"><strong>{{ item.product.title }}</strong></p>
-                            <p class="my-0"><strong>Size: </strong>{{ item.dimensions}}</p>
+                            <p class="my-0"><strong>Size: </strong>{{ item.dimensions }}</p>
                             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                             {% if item.product.discount_applies %}
-                            <p class="my-3"><strong>20% Discount applies<strong></strong></p>
+                            <p class="my-3"><strong>20% Discount applies</strong></p>
                             {% endif %}      
                         </td>
                         <td class="py-3">
@@ -110,7 +110,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-black rounded-0 btn-lg">
+                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>

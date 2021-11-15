@@ -39,5 +39,5 @@ class Print(models.Model):
 
 class PrintOption(models.Model):
     size = models.IntegerField(choices=SIZES, unique=True)
-    dimensions = models.TextField()
+    dimensions = models.CharField(max_length=254)
     price = models.DecimalField(max_digits=6, decimal_places=2)
