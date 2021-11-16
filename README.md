@@ -2,6 +2,8 @@
 
 [View the live project here](???????)
 
+Document the e-commerce business model underlying your application?????????????????????????????
+
 The Íomhá Prints project ???????? - to be written
 
 ![Mockup](documentation/supp-images/amiresponsive.png)
@@ -305,7 +307,8 @@ Once code changes have been completed and tested on localhost, the application c
 - Information on how to use command line sql to deduct 6 months from automatic date was based on an example found here : [SQL Date](https://stackoverflow.com/questions/21309204/how-to-add-time-to-a-datetime-in-sqlite)
 - Code to filter new arrivals was based on information found here : [Date Filter](https://stackoverflow.com/questions/1984047/django-filter-older-than-days)
 - CSS to centre the back-to-top button was based on information found here : [CSS Center](https://stackoverflow.com/questions/2005954/center-a-positionfixed-element)
-- Code to extract the first word from a string based on information found here : [Python split](https://www.kite.com/python/answers/how-to-get-the-first-word-in-a-string-in-python)
+- Code to extract the first word from a string was based on information found here : [Python split](https://www.kite.com/python/answers/how-to-get-the-first-word-in-a-string-in-python)
+- Code to take the first 2 chars of the print dimensions in django template was based on information found here : [Django Template Slice](https://stackoverflow.com/questions/17596141/django-slice-string-in-template)
 
 
 ### Content 
