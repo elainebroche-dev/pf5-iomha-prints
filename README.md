@@ -124,6 +124,7 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 -   [Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to simplify form rendering
 -   [Stripe](https://js.stripe.com/v3/) used for secure payments (referenced in base.html)
 -   [Stripe install library](https://pypi.org/project/stripe/) used for secure payments
+-   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe
 
 to be written - list left here for reference
 -   [dbdiagram.io](https://dbdiagram.io/home) was used to create the Entity Relationship diagrams for the application data model
