@@ -4,6 +4,10 @@ html {
 }
 
 body {  
+    font-family: 'Lato';
+}
+
+.second-font {
     font-family: 'Old Standard TT';
 }
 

@@ -12,7 +12,7 @@ def view_bag(request):
     return render(request, 'bag/bag.html')
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified print to the shopping bag """
+    """ Add a quantity of the specified print to the shopping cart """
 
     product = get_object_or_404(Print, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -64,7 +64,7 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """Remove the item from the shopping bag"""
+    """Remove the item from the shopping cart"""
 
     try:
         product = get_object_or_404(Print, pk=item_id)
