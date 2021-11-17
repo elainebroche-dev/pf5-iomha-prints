@@ -313,11 +313,14 @@ Once code changes have been completed and tested on localhost, the application c
 
 ### Content 
 - The website page layout look and feel were influed by [Dunnes Stores Website](https://www.dunnesstores.com/) and [Art Prints](https://artprints.ie/)
+- The artist names are fictional and were generated using this website [Name Generator](https://www.random-name-generator.com/)
 
 ### Media 
 - The ??? font used was imported from [Google Fonts](https://fonts.google.com/)
 - Fontawesome was used for icons, including icons for ????? - [Font Awesome](https://fontawesome.com/)
 - The application favicon was created from the images icon on [Font Awesome](https://fontawesome.com/) and created using information found here : [Icon as Favicon](https://stackoverflow.com/questions/18156240/use-font-awesome-icon-as-favicon) and [Favicon Generator](https://gauger.io/fonticon/)
+- The artists are ficitonal and images for them were generated using this website [This Person Does Not Exist](https://thispersondoesnotexist.com/)
+
 - To be written ???????????????????
   
 ### Acknowledgments
