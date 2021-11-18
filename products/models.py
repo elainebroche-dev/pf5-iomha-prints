@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
+
 SIZES = ((0, "Small"), (1, "Medium"), (2, "Large"))
 RATING = ((0, "Unrated"), (1, "Poor"), (2, "Fair"), (3, "Good"), (4, "Very Good"), (5, "Excellent"))
 
@@ -23,7 +25,7 @@ class Print(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     title = models.CharField(max_length=254)
-    artist = models.CharField(max_length=254)
+    artist = models.ForeignKey('artists.Artist', null=True, blank=True, on_delete=models.SET_NULL)
     rating = models.IntegerField(choices=RATING, default=0, blank=0)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
