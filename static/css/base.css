@@ -91,6 +91,12 @@ body {
     max-width: 125rem;
 }
 
+.page-width-limit {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100rem !important;
+}
+
 .footer {
     margin-right: auto;
     margin-left: auto;
@@ -358,6 +364,18 @@ input[name='q']::placeholder {
 	font-family: 'Old Standard TT';
 }
 
+.print-item-heading {
+    font-weight: bold;
+}
+
+.print-item-heading {
+    display:none;
+}
+
+#subtotal-str {
+    font-weight: bold;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -381,6 +399,13 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 
+    .print-item-heading {
+        display:flex;
+    }
+
+    #subtotal-str {
+        display:none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -399,7 +424,10 @@ input[name='q']::placeholder {
         min-width:320px;
     }
 
-   
+    .print-item-heading {
+        display:none;
+    }
+  
 }
 
 @media (max-width: 540px) {
