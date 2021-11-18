@@ -362,7 +362,8 @@ input[name='q']::placeholder {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
+  .container, 
+  .mid-page {
     max-width: 80%;
   }
 }
@@ -409,6 +410,10 @@ input[name='q']::placeholder {
 
     .header-container {
         padding-bottom : 32px;
+    }
+
+    .allauth-form-inner-content {
+        padding-top: 32px;
     }
 }
 

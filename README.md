@@ -27,6 +27,9 @@ The Íomhá Prints project ???????? - to be written
 
 ## Features
 
+make notes here to say that many of the features are based on the walkthrough and some such as profile, and allauth are largely unchanged.  Others have been added to or customized for this project and ?? should the features list focus on the differences ?  or highlight them in some way ????
+bag.html needs work to make it responsive
+
 ### Existing Features
 
 - include SEO stuff and privacy policy info here.
