@@ -129,6 +129,7 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 -   [Stripe](https://js.stripe.com/v3/) used for secure payments (referenced in base.html)
 -   [Stripe install library](https://pypi.org/project/stripe/) used for secure payments
 -   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe
+-   [Summernote](https://pypi.org/project/django-summernote/) used to provide WYSIWYG editing on the Artist Bio editing screen
 
 to be written - list left here for reference
 -   [dbdiagram.io](https://dbdiagram.io/home) was used to create the Entity Relationship diagrams for the application data model
@@ -139,7 +140,7 @@ to be written - list left here for reference
 -   [dj_database_url](https://pypi.org/project/dj-database-url/) library used to allow database urls to connect to the postgres db
 -   [psycopg2](https://pypi.org/project/psycopg2/) database adapter used to support the connection to the postgres db
 -   [Cloudinary](https://cloudinary.com/) used to store the images used by the application
--   [Summernote](https://pypi.org/project/django-summernote/) used to provide WYSIWYG editing on the Hike editing screen
+
 
 -   [jquery library](https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js) used to fade out alert messages
 -   [Django testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/tools/) used for python mvt testing

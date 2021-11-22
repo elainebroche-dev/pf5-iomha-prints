@@ -1,17 +1,19 @@
 from django.contrib import admin
 from .models import Artist
+from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
-class ArtistAdmin(admin.ModelAdmin):
+@admin.register(Artist)
+class ArtistAdmin(SummernoteModelAdmin):
     list_display = (
         'name',
         'nationality',
-        'date_of_birth',
-        'date_of_death',
+        'dob',
         'image',
     )
 
+    summernote_fields = ('bio',)
+
     ordering = ('name',)
 
-admin.site.register(Artist, ArtistAdmin)

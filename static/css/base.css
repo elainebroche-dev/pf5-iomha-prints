@@ -155,6 +155,11 @@ body {
     letter-spacing: 0.2rem;
 }
 
+.print-details-sub {
+    font-size:large;
+    letter-spacing: 0.1rem;
+}
+
 .image-flash {
     position: absolute;
     top: -3%;

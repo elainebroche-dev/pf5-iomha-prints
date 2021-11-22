@@ -36,11 +36,11 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0 print-details">Title: {{ product.title }}</p>
                     {% if product.artist_id %}
-                    <a href="{% url 'artist_bio' product.artist_id %}" class="mt-0 print-details">Artist: {{ product.artist }}</a>
+                    <a href="{% url 'artist_bio' product.artist_id %}" class="mt-0 print-details-sub">Artist: {{ product.artist }}</a>
                     {% else %} 
-                    <p class="mb-0 print-details">Artist: Unknown</p>
+                    <p class="mb--0 print-details-sub">Artist: Unknown</p>
                     {% endif %}
-                    <div class="row pb-0">
+                    <div class="row pb-0 pt-2">
                         {% if product.category %}
                         <div class="col-5">
                             <div class="text-muted">
