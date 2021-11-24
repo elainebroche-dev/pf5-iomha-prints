@@ -89,6 +89,15 @@
                         </div>
                     </div>
 
+                    {% if request.user.is_superuser %}
+                    <div class="row mb-1">
+                        <small>
+                            <a href="{% url 'edit_print' product.id %}">Edit</a> | 
+                            <a class="text-danger" href="{% url 'delete_print' product.id %}" onclick="return confirm('Are you sure you wish to delete this print?')">Delete</a>
+                        </small>
+                    </div>
+                    {% endif %}
+
                     {% for option in options %}
                     <div class="row mb-0 text-left ">
                         <div class="col-auto ">{{ option.dimensions }}  </div>
