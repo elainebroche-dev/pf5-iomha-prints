@@ -30,6 +30,13 @@ The Íomhá Prints project ???????? - to be written
 make notes here to say that many of the features are based on the walkthrough and some such as profile, and allauth are largely unchanged.  Others have been added to or customized for this project and ?? should the features list focus on the differences ?  or highlight them in some way ????
 bag.html needs work to make it responsive
 need to check out the pass reqs re business type
+the confirm on the delete of print and artist is very basic
+talk about filled in user icon when logged in, my home link on mobile menu, carousel, new arrivals, discounts
+search checks for artist name and title
+artist bio
+admin for artist, print and printoption
+summernote
+dateselect widget
 
 ### Existing Features
 
@@ -130,6 +137,7 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 -   [Stripe install library](https://pypi.org/project/stripe/) used for secure payments
 -   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe
 -   [Summernote](https://pypi.org/project/django-summernote/) used to provide WYSIWYG editing on the Artist Bio editing screen
+
 
 to be written - list left here for reference
 -   [dbdiagram.io](https://dbdiagram.io/home) was used to create the Entity Relationship diagrams for the application data model
@@ -316,7 +324,13 @@ Once code changes have been completed and tested on localhost, the application c
 - Code to extract the first word from a string was based on information found here : [Python split](https://www.kite.com/python/answers/how-to-get-the-first-word-in-a-string-in-python)
 - Code to take the first 2 chars of the print dimensions in django template was based on information found here : [Django Template Slice](https://stackoverflow.com/questions/17596141/django-slice-string-in-template)
 - Code to create foreign key to model in another app was based on information found here : [Reference Model in another app](https://www.py4u.net/discuss/160247)
-
+- Code to use summernote in a django form was based on information found here : [Integrating Summernote](https://djangocentral.com/integrating-summernote-in-django/)
+- Code to place the widgets.py in the project folder so it can be shared : [Import Widget](https://stackoverflow.com/questions/60095510/how-do-i-include-a-built-in-django-widget-template-in-my-custom-widget-template)
+- Code to set year range in SelectDateWidget was found here : [SelectDateWidget Years](https://stackoverflow.com/questions/12187671/how-to-change-year-options-of-djangos-selectdatewidget)
+- Code to list the years range in SelectDateWidget from highest to lowest was found here : [Desc Year](https://www.generacodice.com/en/articolo/1166815/django-selectdatewidget-years-in-reverse)
+- Code to use SummernoteInPlaceWidget was found here : [InplaceWidget](https://github.com/summernote/django-summernote/issues/303)
+- Code to manipulate django querysets was based on information found here : [Django Querysets](https://docs.djangoproject.com/en/3.2/ref/models/querysets/)
+- Code to invoke template on select control change was based on information found here : [Location href](https://stackoverflow.com/questions/15341285/how-do-i-call-a-django-function-on-button-click) and here : [Build URL](https://stackoverflow.com/questions/37311042/call-django-urls-inside-javascript-on-click-event)
 
 ### Content 
 - The website page layout look and feel were influed by [Dunnes Stores Website](https://www.dunnesstores.com/) and [Art Prints](https://artprints.ie/)

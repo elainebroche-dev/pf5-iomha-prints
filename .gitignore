@@ -8,3 +8,5 @@ node_modules/
 .github/
 *.sqlite3
 env.py
+sqlite.db
+db.json
