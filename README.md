@@ -137,6 +137,12 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 -   [Stripe install library](https://pypi.org/project/stripe/) used for secure payments
 -   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe
 -   [Summernote](https://pypi.org/project/django-summernote/) used to provide WYSIWYG editing on the Artist Bio editing screen
+-   [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku
+-   [dj_database_url](https://pypi.org/project/dj-database-url/) library used to allow database urls to connect to the postgres db
+-   [psycopg2](https://pypi.org/project/psycopg2/) database adapter used to support the connection to the postgres db
+-   [Amazon S3](https://aws.amazon.com/s3/) used to store static files and images
+-   [Boto3](https://pypi.org/project/boto3/) the Amazon Web Services (AWS) Software Development Kit (SDK) for Python
+-   [django_storages](https://django-storages.readthedocs.io/en/latest/) used to connect django to S3
 
 
 to be written - list left here for reference
