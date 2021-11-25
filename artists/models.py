@@ -1,7 +1,10 @@
 from django.db import models
 
-class Artist(models.Model):
 
+class Artist(models.Model):
+    """
+    Artist data model
+    """
     name = models.CharField(max_length=254, unique=True)
     nationality = models.CharField(max_length=254)
     bio = models.TextField()
@@ -9,4 +12,4 @@ class Artist(models.Model):
     dob = models.DateField(null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return str(self.name)

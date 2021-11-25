@@ -1,11 +1,14 @@
 from django.contrib import admin
-from .models import Artist
 from django_summernote.admin import SummernoteModelAdmin
+from .models import Artist
 
-# Register your models here.
 
 @admin.register(Artist)
 class ArtistAdmin(SummernoteModelAdmin):
+    """
+    Define visible list of fields, WYSIWYG bio field and default ordering
+    for Artist Model
+    """
     list_display = (
         'name',
         'nationality',
@@ -16,4 +19,3 @@ class ArtistAdmin(SummernoteModelAdmin):
     summernote_fields = ('bio',)
 
     ordering = ('name',)
-

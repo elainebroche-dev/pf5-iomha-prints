@@ -1,15 +1,12 @@
+from datetime import datetime, timedelta
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from .models import Print, PrintOption, Category
-from datetime import datetime, timedelta
 from django.db.models.functions import Lower
+from .models import Print, PrintOption, Category
 from .forms import PrintForm, PrintOptionForm
-
-
-# Create your views here.
 
 
 def all_products(request):
@@ -44,7 +41,8 @@ def all_products(request):
 
         # new arrivals will have an added_on date within the last 6 months
         if 'newarrivals' in request.GET:
-            products = products.filter(added_on__gte=datetime.now()-timedelta(days=182))
+            products = products.filter(added_on__gte=datetime.now() -
+                                       timedelta(days=182))
 
         if 'wishlist' in request.GET:
             products = products.filter(likes__id=request.user.id)
@@ -53,14 +51,16 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
- 
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
-            queries = Q(title__icontains=query) | Q(artist__name__icontains=query)
+
+            queries = (Q(title__icontains=query) |
+                       Q(artist__name__icontains=query))
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -88,10 +88,11 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'options': options,
-        'liked' : liked,
+        'liked': liked,
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def like_product(request, product_id):
@@ -105,6 +106,7 @@ def like_product(request, product_id):
         product.likes.add(request.user)
 
     return HttpResponseRedirect(reverse('product_detail', args=[product_id]))
+
 
 @login_required
 def add_print(request):
@@ -120,16 +122,19 @@ def add_print(request):
             messages.success(request, 'Successfully added print!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add print. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add print. Please ensure the form is valid.')
     else:
         form = PrintForm()
-        
+
     template = 'products/add_print.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_printoption(request, option_size):
@@ -147,7 +152,10 @@ def edit_printoption(request, option_size):
             messages.success(request, 'Successfully updated print option!')
             return redirect(reverse('edit_printoption', args=[option.size]))
         else:
-            messages.error(request, 'Failed to update print option. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update print option. '
+                'Please ensure the form is valid.')
     else:
         form = PrintOptionForm(instance=option)
         messages.info(request, f'You are editing {option.dimensions}')
@@ -159,6 +167,7 @@ def edit_printoption(request, option_size):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_print(request, product_id):
@@ -175,7 +184,9 @@ def edit_print(request, product_id):
             messages.success(request, 'Successfully updated print!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update print. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update print. Please ensure the form is valid.')
     else:
         form = PrintForm(instance=product)
         messages.info(request, f'You are editing {product.title}')
@@ -187,6 +198,7 @@ def edit_print(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_print(request, product_id):

@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Print, Category, PrintOption
 
-# Register your models here.
 
 class PrintAdmin(admin.ModelAdmin):
     list_display = (
@@ -17,10 +16,12 @@ class PrintAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
     )
+
 
 class PrintOptionAdmin(admin.ModelAdmin):
     list_display = (
@@ -28,6 +29,7 @@ class PrintOptionAdmin(admin.ModelAdmin):
         'dimensions',
         'price',
     )
+
 
 admin.site.register(Print, PrintAdmin)
 admin.site.register(Category, CategoryAdmin)

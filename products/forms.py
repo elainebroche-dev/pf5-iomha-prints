@@ -2,6 +2,7 @@ from django import forms
 from iomha_prints.widgets import CustomClearableFileInput
 from .models import Print, PrintOption
 
+
 class PrintForm(forms.ModelForm):
 
     class Meta:
@@ -9,7 +10,8 @@ class PrintForm(forms.ModelForm):
         fields = '__all__'
         exclude = ('likes',)
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label='Image', required=False,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

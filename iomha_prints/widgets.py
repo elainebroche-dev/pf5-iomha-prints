@@ -8,6 +8,6 @@ class CustomClearableFileInput(ClearableFileInput):
     input_text = _('')
     template_name = 'custom_widget_templates/custom_clearable_file_input.html'
 
+
 class CustomSelectDateWidget(SelectDateWidget):
     template_name = 'django/forms/widgets/select_date.html'
-    

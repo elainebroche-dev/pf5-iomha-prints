@@ -3,16 +3,26 @@ from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """
+    Order Line item Admin
+        - define readonly field (calculated by the app)
+    """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Order Admin
+        - define ordering, readonly fields (calculated by the app),
+          list of visible fields and fields shown on table summary page.
+          Line items are to be embedded on the Order Admin page
+    """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
                        'delivery_cost', 'order_total',
-                        'grand_total', 'original_bag',
+                       'grand_total', 'original_bag',
                        'stripe_pid')
 
     fields = ('order_number', 'user_profile', 'date', 'full_name',
@@ -27,5 +37,6 @@ class OrderAdmin(admin.ModelAdmin):
                     'grand_total',)
 
     ordering = ('-date',)
+
 
 admin.site.register(Order, OrderAdmin)

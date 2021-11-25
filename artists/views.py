@@ -16,6 +16,7 @@ def artist_bio(request, artist_id):
 
     return render(request, 'artists/artist_bio.html', context)
 
+
 @login_required
 def add_artist(request):
     """ Add an artist to the database """
@@ -30,16 +31,18 @@ def add_artist(request):
             messages.success(request, 'Successfully added artist!')
             return redirect(reverse('add_artist'))
         else:
-            messages.error(request, 'Failed to add artist. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add artist. \
+                Please ensure the form is valid.')
     else:
         form = ArtistForm()
-        
+
     template = 'artists/add_artist.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_artist(request, artist_id):
@@ -56,7 +59,8 @@ def edit_artist(request, artist_id):
             messages.success(request, 'Successfully updated artist!')
             return redirect(reverse('artist_bio', args=[artist.id]))
         else:
-            messages.error(request, 'Failed to update artist. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update artist. \
+                Please ensure the form is valid.')
     else:
         form = ArtistForm(instance=artist)
         messages.info(request, f'You are editing {artist.name}')
@@ -68,6 +72,7 @@ def edit_artist(request, artist_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_artist(request, artist_id):
