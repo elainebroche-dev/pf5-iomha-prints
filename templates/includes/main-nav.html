@@ -2,16 +2,17 @@
     <ul class="navbar-nav w-auto mx-auto">
         {% if user.is_authenticated %}
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5"
-                    href="{% url 'products' %}?wishlist"><i class="fas fa-heart fa-lg"></i>&nbsp;&nbsp;Wishlist</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?wishlist"><i
+                    class="fas fa-heart fa-lg"></i>&nbsp;&nbsp;Wishlist</a>
         </li>
         {% endif %}
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black d-lg-none"
-                    href="{% url 'home' %}"><i class="fas fa-home fa-lg"></i>&nbsp;&nbsp;Home</a>
+            <a class="logo-font font-weight-bold nav-link text-black d-lg-none" href="{% url 'home' %}"><i
+                    class="fas fa-home fa-lg"></i>&nbsp;&nbsp;Home</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Prints
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -22,7 +23,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="category-link">
@@ -31,12 +33,14 @@
                 <a href="{% url 'products' %}?category=Architecture" class="dropdown-item">Architecture</a>
                 <a href="{% url 'products' %}?category=Nature" class="dropdown-item">Nature</a>
                 <a href="{% url 'products' %}?category=Space" class="dropdown-item">Space</a>
-                <a href="{% url 'products' %}?category=Abstract,Landscape,Architecture,Nature,Space" class="dropdown-item">All Categories</a>
+                <a href="{% url 'products' %}?category=Abstract,Landscape,Architecture,Nature,Space"
+                    class="dropdown-item">All Categories</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
