@@ -1,0 +1,1 @@
+web: gunicorn iomha_prints.wsgi:application
