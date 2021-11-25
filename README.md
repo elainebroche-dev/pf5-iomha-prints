@@ -160,6 +160,9 @@ automated tests
 
 ### Validator Testing 
 
+- python warning : Unused variable field_name in artists/forms.py - code is formatted this way so that the field variable
+binds the actual field and not just a string representing it's name.
+
 - [HTML Validator](https://validator.w3.org/)
 
     - As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator (link shown above). 
