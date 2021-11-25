@@ -93,7 +93,7 @@
                 </div>
 
                 {% if request.user.is_superuser %}
-                <div class="row mb-1">
+                <div class="row mb-1 px-3">
                     <small>
                         <a href="{% url 'edit_print' product.id %}">Edit</a> |
                         <a class="text-danger" href="{% url 'delete_print' product.id %}"
