@@ -122,7 +122,7 @@ body {
 }
 
 #col-a {
-    max-width: calc(100% - 340px);
+    max-width: calc(100% - 21.25rem);
     min-width: 26.75rem;
 }
 
