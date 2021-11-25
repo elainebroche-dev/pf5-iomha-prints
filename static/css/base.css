@@ -1,9 +1,8 @@
-
 html {
     height: 100%;
 }
 
-body {  
+body {
     font-family: 'Lato';
 }
 
@@ -14,10 +13,11 @@ body {
 .bk-image {
     background-size: cover;
     color: #555;
-    margin:auto;
+    margin: auto;
     max-width: 125rem;
-    height: 800px;
+    height: 50rem;
 }
+
 .bk-image1 {
     background: url('/media/pawel-czerwinski-ruJm3dBXCqw-unsplash.jpg') no-repeat center center fixed;
 }
@@ -49,7 +49,7 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 16.25rem;
 }
 
 .btn-black {
@@ -72,17 +72,17 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 0.0625rem solid black !important;
 }
 
 .bg-black {
     background: #000 !important;
 }
 
-.carousel-inner > .carousel-item > img {
-  max-width : 1290px;    
-  width: 1290px;
-  height: 65vh;
+.carousel-inner>.carousel-item>img {
+    max-width: 80.625rem;
+    width: 80.625rem;
+    height: 65vh;
 }
 
 .container-fluid {
@@ -112,68 +112,68 @@ body {
 }
 
 .header-container {
-    padding-top: 130px;
+    padding-top: 8.125rem;
 }
 
 #mobile-menu {
-    margin : 0;
+    margin: 0;
     padding: 0;
     padding-top: 0.5rem;
 }
 
 #col-a {
     max-width: calc(100% - 340px);
-    min-width: 428px;
+    min-width: 26.75rem;
 }
 
 #col-b {
-    min-width: 320px;
+    min-width: 20rem;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 .image-border {
-    padding:6px;
-    border: 2px solid black;
+    padding: 0.375rem;
+    border: 0.125rem solid black;
 }
 
 .print-title {
-    font-size:large;
+    font-size: large;
     letter-spacing: 0.08rem;
 }
 
 .print-details {
-    font-size:x-large;
+    font-size: x-large;
     letter-spacing: 0.2rem;
 }
 
 .print-details-sub {
-    font-size:large;
+    font-size: large;
     letter-spacing: 0.1rem;
 }
 
 .image-flash {
     position: absolute;
     top: -3%;
-    right : -3%;
+    right: -3%;
     min-width: 20%;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .image-flash-detail {
     position: absolute;
     top: 7%;
-    right : 0;
+    right: 0;
     min-width: 20%;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .image-bkgd-hard {
@@ -181,16 +181,15 @@ body {
 }
 
 .discount {
-    
-    padding-top: 14px;
-    padding-left: 8px;
-    padding-right: 8px;
+
+    padding-top: 0.875rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-family: Lato;
     font-weight: 600;
     text-align: center;
 
 }
-
 
 .btn-like {
     color: #E84610;
@@ -210,19 +209,21 @@ body {
     font-size: larger;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
 
 .btt-button {
     position: fixed;
-    height: 42px;
-    width: 42px;
-    bottom : 10px;
+    height: 2.625rem;
+    width: 2.625rem;
+    bottom: 0.625rem;
     left: 50%;
-    margin-top: -100px; /* Negative half of height. */
-    margin-left: -21px; /* Negative half of width. */
+    margin-top: -6.25rem;
+    /* Negative half of height. */
+    margin-left: -1.3125rem;
+    /* Negative half of width. */
     background-color: white;
 }
 
@@ -234,8 +235,9 @@ a.category-badge > span.badge:hover {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: black !important;
+    /* use important to override link colors for <a> elements */
+    border: 0.0625rem solid black;
 }
 
 input[name='q']::placeholder {
@@ -246,8 +248,8 @@ input[name='q']::placeholder {
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 4.5rem;
+    right: 0.9375rem;
     z-index: 99999999999;
 }
 
@@ -256,19 +258,19 @@ input[name='q']::placeholder {
 }
 
 .toast-capper {
-    height: 2px;
+    height: 0.125rem;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    width: 0;
+    height: 0;
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.625rem solid black;
     position: absolute;
-    top: -10px;
-    right: 36px;
+    top: -0.625rem;
+    right: 2.25rem;
 }
 
 /* Convenience classes - colors copied from Bootstrap */
@@ -305,17 +307,18 @@ input[name='q']::placeholder {
 }
 
 .bag-notification-wrapper {
-    height: 100px;
+    height: 6.25rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -333,8 +336,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -344,29 +347,30 @@ input[name='q']::placeholder {
     -ms-user-select: none;
     user-select: none;
     background-color: #000;
-    border: 1px solid #000;
+    border: 0.0625rem solid #000;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 .allauth-form-inner-content .logo-font {
-	font-family: 'Old Standard TT';
+    font-family: 'Old Standard TT';
 }
 
 .print-item-heading {
@@ -374,7 +378,7 @@ input[name='q']::placeholder {
 }
 
 .print-item-heading {
-    display:none;
+    display: none;
 }
 
 #subtotal-str {
@@ -410,24 +414,24 @@ input[name='q']::placeholder {
 }
 
 .note-editor {
-    width : 100%!important;
+    width: 100% !important;
 }
 
 #div_id_dob {
-    max-width: 300px;
+    max-width: 18.75rem;
 }
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+@media (min-width: 75rem) {
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -437,51 +441,50 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 10.25rem;
     }
 
     .print-item-heading {
-        display:flex;
+        display: flex;
     }
 
     #subtotal-str {
-        display:none;
+        display: none;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 48rem) {
     .nav-link {
-        padding : .5rem;
+        padding: .5rem;
     }
 
     .bk-image {
-        height : 580px;
+        height: 36.25rem;
     }
 
     #col-a {
         width: 100%;
         max-width: 100%;
-        padding-bottom: 15px;
-        min-width:320px;
+        padding-bottom: 1rem;
+        min-width: 20rem;
     }
 
     .print-item-heading {
-        display:none;
+        display: none;
     }
-  
+
 }
 
-@media (max-width: 540px) {
+@media (max-width: 33.75rem) {
     .bk-image {
-        height : 380px;
+        height: 23.75rem;
     }
 
     .header-container {
-        padding-bottom : 32px;
+        padding-bottom: 2rem;
     }
 
     .allauth-form-inner-content {
-        padding-top: 32px;
+        padding-top: 2rem;
     }
 }
-
