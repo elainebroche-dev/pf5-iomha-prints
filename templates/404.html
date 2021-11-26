@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mb-2 page-width-limit">
+
+    <div class="row">
+        <div class="col-12">
+            <h1 class="my-4">Error 404</h1>
+            <h1 class="my-4">Sorry, this URL does not exist or is no longer available</h1>
+            <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 btn-lg my-2">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Home</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
