@@ -411,6 +411,9 @@ input[name='q']::placeholder {
     max-width: 18.75rem;
 }
 
+.uname {
+    font-size: smaller;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
