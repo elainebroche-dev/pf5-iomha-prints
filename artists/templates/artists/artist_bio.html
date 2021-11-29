@@ -36,11 +36,13 @@
                 <p class="mb-0"></p>{{ artist.bio | safe}}</p>
             </div>
             {% if request.user.is_superuser %}
-            <small class="ml-3">
-                <a href="{% url 'edit_artist' artist.id %}">Edit</a> |
-                <a class="text-danger" href="{% url 'delete_artist' artist.id %}"
-                    onclick="return confirm('Are you sure you wish to delete this artist?')">Delete</a>
-            </small>
+            <div class="row mb-4">
+                <small class="ml-3">
+                    <a href="{% url 'edit_artist' artist.id %}">Edit</a> |
+                    <a class="text-danger" href="{% url 'delete_artist' artist.id %}"
+                        onclick="return confirm('Are you sure you wish to delete this artist?')">Delete</a>
+                </small>
+            </div>
             {% endif %}
         </div>
 

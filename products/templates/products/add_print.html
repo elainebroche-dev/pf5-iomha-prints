@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
+<div class="container header-container ">
     <div class="row">
         <div class="col"></div>
     </div>
@@ -10,9 +10,9 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container page-width-limit">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-8">
             <hr>
             <h2 class="logo-font mb-4 second-font">Print Management</h2>
             <h5 class="text-muted">Add a Print</h5>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-10 data-form">
             <form method="POST" action="{% url 'add_print' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}

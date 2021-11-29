@@ -1,4 +1,34 @@
 <ul id="mobile-menu">
+    
+    <li class="list-inline-item dropdown">
+        <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                {% if request.user.is_authenticated %}
+                <div><i class="fas fa-user fa-lg"></i></div>
+                <p class="my-0"><small>{{ user.username|slice:":12"  }}</small></p>
+                {% else %}
+                <div><i class="far fa-user fa-lg"></i></div>
+                <p class="my-0">Account</p>
+                {% endif %}
+            </div>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_print' %}" class="dropdown-item">Print Management</a>
+            <a href="{% url 'add_artist' %}" class="dropdown-item">Artist Management</a>
+            <a href="{% url 'edit_printoption' 0 %}" class="dropdown-item">Option Management</a>
+            {% endif %}
+            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            {% endif %}
+        </div>
+    </li>
+
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -24,34 +54,7 @@
             </form>
         </div>
     </li>
-    <li class="list-inline-item dropdown">
-        <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <div class="text-center">
-                {% if request.user.is_authenticated %}
-                <div><i class="fas fa-user fa-lg"></i></div>
-                <p class="my-0"><small>{{ user.username|slice:":12"  }}</small></p>
-                {% else %}
-                <div><i class="far fa-user fa-lg"></i></div>
-                <p class="my-0">Account</p>
-                {% endif %}
-            </div>
-        </a>
-        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-            {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <a href="{% url 'add_print' %}" class="dropdown-item">Print Management</a>
-            <a href="{% url 'add_artist' %}" class="dropdown-item">Artist Management</a>
-            <a href="{% url 'edit_printoption' 0 %}" class="dropdown-item">Print Option Management</a>
-            {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
-        </div>
-    </li>
+
     <li class="list-inline-item">
         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
             href="{% url 'view_bag' %}">
