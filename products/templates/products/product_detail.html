@@ -22,12 +22,12 @@
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid image-border" src="{{ product.image.url }}"
-                        alt="{{ product.title }}">
+                        alt="Title: {{ product.title }}, Image Category: {{ product.category }}">
                 </a>
                 {% else %}
                 <a href="">
                     <img class="card-img-top img-fluid image-border" src="{{ MEDIA_URL }}noimage.png"
-                        alt="{{ product.title }}">
+                        alt="Title: {{ product.title }}, Image Category: {{ product.category }}">
                 </a>
                 {% endif %}
             </div>

@@ -63,12 +63,12 @@
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid image-border" src="{{ product.image.url }}"
-                                alt="{{ product.title }}">
+                                alt="Title: {{ product.title }}, Image Category: {{ product.category }}">
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid image-border" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ product.title }}">
+                                alt="Title: {{ product.title }}, Image Category: {{ product.category }}">
                         </a>
                         {% endif %}
 

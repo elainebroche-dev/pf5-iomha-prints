@@ -17,12 +17,12 @@
                 {% if artist.image %}
                 <a href="{{ artist.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid image-border" src="{{ artist.image.url }}"
-                        alt="{{ artist.name }}">
+                        alt="Print artist : {{ artist.name }}">
                 </a>
                 {% else %}
                 <a href="">
                     <img class="card-img-top img-fluid image-border" src="{{ MEDIA_URL }}noimage.png"
-                        alt="{{ artist.name }}">
+                        alt="Print artist : {{ artist.name }}">
                 </a>
                 {% endif %}
             </div>
