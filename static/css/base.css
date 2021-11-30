@@ -415,6 +415,15 @@ input[name='q']::placeholder {
     max-width: 37.5rem;
 }
 
+.topic-heading {
+    padding-top: 48px;
+    text-align: center;
+}
+
+#company-info p {
+    text-align: justify;
+}
+
 /* mailchimp styling */
 #mc_embed_signup form {
     padding: 0!important;
@@ -482,6 +491,10 @@ input[name='q']::placeholder {
         font-size: 2rem;
     }
 
+    .display-5.logo-font.text-black {
+        font-size: 1.8rem;
+    }
+
     .nav-link {
         padding: 0.15rem;
     }
@@ -514,5 +527,12 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 
+    
+}
+
+@media (max-width: 39.9375rem) {
+    .tagline-wrapper {
+        text-align: center;
+    }
 }
 
