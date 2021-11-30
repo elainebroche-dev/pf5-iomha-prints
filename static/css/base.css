@@ -415,6 +415,16 @@ input[name='q']::placeholder {
     max-width: 37.5rem;
 }
 
+/* mailchimp styling */
+#mc_embed_signup form {
+    padding: 0!important;
+}
+
+#mc-embedded-subscribe {
+    margin: 0;
+    width : 10rem;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
