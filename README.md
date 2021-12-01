@@ -37,6 +37,10 @@ artist bio
 admin for artist, print and printoption
 summernote
 dateselect widget
+username shown on screen - limited to 12 chars
+likes (login required - this code is already there)
+subscribe list and facebook page
+privacy policy
 
 ### Existing Features
 
@@ -342,7 +346,7 @@ Once code changes have been completed and tested on localhost, the application c
 - Code to invoke template on select control change was based on information found here : [Location href](https://stackoverflow.com/questions/15341285/how-do-i-call-a-django-function-on-button-click) and here : [Build URL](https://stackoverflow.com/questions/37311042/call-django-urls-inside-javascript-on-click-event)
 
 ### Content 
-- The website page layout look and feel were influed by [Dunnes Stores Website](https://www.dunnesstores.com/) and [Art Prints](https://artprints.ie/)
+- The website page layout look and feel were influenced by [Dunnes Stores Website](https://www.dunnesstores.com/), [Desenio](https://desenio.ie/) and [Art Prints](https://artprints.ie/)
 - The artist names are fictional and were generated using this website [Name Generator](https://www.random-name-generator.com/)
 
 ### Media 
