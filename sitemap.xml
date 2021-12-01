@@ -9,412 +9,417 @@
 
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/accounts/login/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/bag/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?category=Abstract</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?category=Landscape</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?category=Architecture</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?category=Nature</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?category=Space</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?category=Abstract,Landscape,Architecture,Nature,Space</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?newarrivals</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/?discount</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pf5-iomha-prints.herokuapp.com/privacy_policy/</loc>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/24/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/37/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/36/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/31/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/30/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/29/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/4/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/53/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/52/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/47/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/5/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/13/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/14/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/3/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/16/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/17/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/18/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/46/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/45/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/21/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/22/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/23/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/28/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/2/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/6/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/7/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/12/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/15/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/35/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/41/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/44/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/51/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/43/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/40/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/8/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/1/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/27/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/50/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/34/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/20/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/19/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/11/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/48/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/49/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/32/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/33/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/26/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/25/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/38/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/39/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/42/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/products/10/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/12/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/2/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/6/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/18/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/10/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/15/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/16/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/8/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/1/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/17/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/7/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/9/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/4/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://pf5-iomha-prints.herokuapp.com/artists/14/</loc>
-  <lastmod>2021-11-30T11:55:41+00:00</lastmod>
+  <lastmod>2021-12-01T10:52:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
