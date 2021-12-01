@@ -9,10 +9,23 @@ def bag_contents(request):
     Project wide context used across the apps to keep track of the
     bag/cart and how many prints of each item/size are in the bag
     """
+
     bag_items = []
     total = 0
     product_count = 0
     bag = request.session.get('bag', {})
+
+    # remove items from bag if they no longer exist in the db
+    # this is to handle case where print is deleted while in
+    # a cart
+    missing_prints = []
+    for item_id, item_data in bag.items():
+        num_prints = Print.objects.filter(pk=item_id).count()
+        if not num_prints:
+            missing_prints.append(item_id)
+
+    for key in missing_prints:
+        bag.pop(key, None)
 
     for item_id, item_data in bag.items():
         product = get_object_or_404(Print, pk=item_id)

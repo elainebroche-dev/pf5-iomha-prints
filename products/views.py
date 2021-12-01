@@ -71,9 +71,8 @@ def all_products(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
-
+    
     return render(request, 'products/products.html', context)
-
 
 def product_detail(request, product_id):
     """ A view to show individual print details """
@@ -209,5 +208,6 @@ def delete_print(request, product_id):
 
     product = get_object_or_404(Print, pk=product_id)
     product.delete()
+
     messages.success(request, 'Print deleted!')
     return redirect(reverse('products'))
