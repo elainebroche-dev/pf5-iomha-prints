@@ -236,11 +236,14 @@
     <!-- Disclaimer -->
         <div class="row">
             <div class="col-12">
-            <p class="m-0 text-center">this website is for educational purposes only - data on this site is fictional
-            </p>
+                <p class="m-0 text-center">this website is for educational purposes only - data on this site is fictional
+                </p>
             </div>
         </div>
     </footer> 
+
+    {% block after_footer %}
+    {% endblock %}
 
     {% block postloadjs %}
     <script type="text/javascript">
