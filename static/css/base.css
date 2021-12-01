@@ -431,7 +431,11 @@ input[name='q']::placeholder {
 
 #mc-embedded-subscribe {
     margin: 0;
-    width : 10rem;
+    width : 10rem!important;
+}
+
+#mc_embed_signup .indicates-required {
+    margin-right: 0!important;
 }
 
 /* -------------------------------- Media Queries */

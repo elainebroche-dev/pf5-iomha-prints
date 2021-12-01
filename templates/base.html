@@ -181,13 +181,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 mt-4">
-                <h4 class="second-font">Social</h4>
-                <p>Keep up to date with all our latest offers</p>
-                <a href="https://www.facebook.com/%C3%8Domh%C3%A1-Prints-102662235595682" target="_blank" rel="noopener"><i class="fab fa-facebook-square fa-2x"></i> Follow us on Facebook!</a>
-                
-            </div>
-            <div class="col-12 col-md-6 mt-4">
+            <div class="col-md-1 col-lg-2"></div>
+            <div class="col-12 col-md-5 col-lg-4 mt-4">
                 <h4 class="second-font">Subscribe!</h4>
                 <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
                 <!-- Mailchimp signup form here -->
@@ -197,13 +192,14 @@
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                         class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required
                             </div>
                             <div class="mc-field-group">
                                 <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
                                 </label>
                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                <div class="indicates-required"><span class="asterisk">*</span> indicates required
                             </div>
+                            
                             <div id="mce-responses" class="clear foot">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
                                 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -226,6 +222,15 @@
                     </form>
                 </div>
                 <!--End mc_embed_signup-->
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-12 col-md-4 mt-4">
+                <h4 class="second-font">Social</h4>
+                <p>Keep up to date with all our latest offers</p>
+                <a href="https://www.facebook.com/%C3%8Domh%C3%A1-Prints-102662235595682" target="_blank" rel="noopener"><i class="fab fa-facebook-square fa-2x"></i> Follow us on Facebook!</a>
+                <div class="my-4">
+                    <a href="{% url 'privacy_policy' %}"><i class="fas fa-user-shield"></i> Privacy Policy</a>
+                </div>
             </div>
         </div>
     <!-- Disclaimer -->
