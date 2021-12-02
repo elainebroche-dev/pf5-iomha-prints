@@ -1,10 +1,13 @@
 <h1 align="center">Íomhá Prints - Order Prints Online</h1>
 
-[View the live project here](???????)
+[View the live project here](https://pf5-iomha-prints.herokuapp.com/)
 
-Document the e-commerce business model underlying your application?????????????????????????????
+The Íomhá Prints project is a B2C e-commerce application which sells art prints directly to end users.  It is implemented as a retail store where users can view, search and filter the products on offer, then select items to add to their shopping cart and purchase through a simple single payment.
 
-The Íomhá Prints project ???????? - to be written
+General users can view details of the prints available for purchase including bio information on the print artist, and can sign up to the company newletter. In addition, registered users can create a wishlist of prints they may be interested in and a profile to keep track of delivery details and order history.
+
+Admin users can manage the lists of prints and artists, this includes being able to add new prints to the range, update pricing, link artists to prints, update artist bio information.  A full description of the available functionality is included in this document.
+
 
 ![Mockup](documentation/supp-images/amiresponsive.png)
 
@@ -22,8 +25,125 @@ The Íomhá Prints project ???????? - to be written
 
 ### User stories :
 
-* US01: To be written
-  - As a **????** I can **????** so that **????**
+* EPIC 01 : Registration and Account Management
+  <details>
+      <summary>User Stories for EPIC 01: </summary>
+
+  - US101 : Register for an account
+      - As a **site user** I can **register for an account** so that **I can view my profile and purchasing history**
+  - US102 : login and logout
+      - As a **site user** I can **easily login or logout** so that **I can access my personal account information**
+  - US103 : reset password
+      - As a **site user** I can **easily reset my password in case I forget** so that **I can recover access to my account**
+  - US104 : confirm registration via email
+      - As a **site user** I can **receive an email confirmation after registering** so that **I can verify that my account registration was successful**
+  - US105 : access user profile
+      - As a **site user** I can **access my personalized user profile** so that **I can view my personal order history and order confirmations and my payment information**
+
+  </details>
+
+* EPIC 02 : Viewing and Navigation
+  <details>
+      <summary>User Stories for EPIC01: </summary>
+
+  - US201 : View a list of products/prints
+      - As a **site user** I can **view a list of prints** so that **I can select some to purchase**
+  - US202 : View individual print details
+      - As a **site user** I can **view details for a specific print** so that **I can see the description, rating, print image, available sizes and pricing**
+  - US203 : View discounted items
+      - As a **site user** I can **easily identify discounted items** so that **I can take advantage of savings on prints I want to purchase**
+  - US204 : View shopping cart total
+      - As a **site user** I can **easily view the total of my purchases at any time** so that **I can avoid over-spending**
+  - US205 : Like a print
+      - As a **site user** I can **'like' a print** so that **it is added to my  wishlist in my personal profile**
+  - US206 : Easily understand purpose of website and how to navigate
+      - As a **site user** I can **quickly identify what the website is selling and easily navigate the pages** so that **I can quickly find the information and functionality I am looking for**
+  - US207 : View wishlist / liked items
+      - As a **site user** I can **view my wishlist** so that **I can see prints I have 'liked'**
+  - US208 : View prints by category
+      - As a **site user** I can **view a specific category of prints** so that **I can quickly narrow down the range of prints I am interested in**
+  - US209 : View artist bio
+      - As a **site user** I can **view bio details of the artist of a specific print** so that **I can easily find out more about the artist**
+  - US210 : Handle 404 and 500 errors 
+      - As a **site user** I can **return to Home after http 404 or 500 response** so that **I feel I am still working within the website and can navigate easily**
+
+  </details>
+
+* EPIC 03 : Sorting and Searching
+  <details>
+      <summary>User Stories for EPIC01: </summary>
+
+  - US301 : Sort list of available prints
+      - As a **site user** I can **sort the list of available prints** so that **I can easily identify the best rated and categorically sorted products**
+  - US302 : Sort a specific category of print
+      - As a **site user** I can **sort a specific category of print** so that **I can find the best-rated print in a specific category or sort the prints in the category or sort the prints in that category by title**
+  - US303 : Sort multiple categories of prints simultaneously
+      - As a **site user** I can **sort multiple categories of prints simultaneously** so that **I can find the best-rated print in a specific category, or sort the prints across broad categories, such as "nature" or "architecture"**
+  - US304 : search for a print by title or artist
+      - As a **site user** I can **search for a print by title or artist** so that **I can find a specific print to purchase**
+  - US305 : view search results and the number of items found
+      - As a **site user** I can **easily view what I've searched for and the number of results** so that **I can quickly decide whether the print I want is available**
+
+  </details>
+
+* EPIC 04 : Purchasing and Checkout
+  <details>
+      <summary>User Stories for EPIC01: </summary>
+
+  - US401 : Add items to shopping cart
+      - As a **site user** I can **add items to my shopping cart** so that **I can choose multiple items to purchase**
+  - US402 : Modify cart contents and remove items from the cart
+      - As a **site user** I can **modify cart quantities and remove items from the shopping cart** so that **manage the contents of my shopping cart and rectify any mistakes in selecting purchases**
+  - US403 : View notifications of user interactions
+      - As a **site user** I can **get notifications on screen of my actions** so that **I can easily understand my interactions with the website and their consequences**
+  - US404 : Finalize order through the checkout page
+      - As a **site user** I can **complete my order by going through the checkout page** so that **I can see a final total, a summary of my order and I can specify a delivery address and payment details**
+  - US405 : Implement a secure payment process
+      - As a **site user** I can **enter my payment details** so that **my payment is secure**
+  - US406 : View an order confirmation after checkout
+      - As a **site user** I can **view an order confirmation after checkout** so that **I can see what was ordered and total costs**
+  - US407 : Receive an email confirmation after checking out
+      - As a **site user** I can **receive an email confirmation after checking out** so that **I have a record of my purchases**
+
+  </details>
+
+* EPIC 05 : Admin and Store Management
+  <details>
+      <summary>User Stories for EPIC01: </summary>
+
+  - US501 : Add a print
+      - As a **site admin** I can **add a print** so that **I can sell new items in my store**
+  - US502 : Edit / update details for a print
+      - As a **site admin** I can **edit / update details for a print** so that **I can change or amend it's title, image, discount setting and other attributes**
+  - US503 : Delete a print
+      - As a **site admin** I can **delete a print** so that **I can remove the print for sale**
+  - US504 : Edit / update details for a print size option
+      - As a **site admin** I can **edit / update details for a print size option** so that **I can change or amend it's price or dimensions**
+  - US505 : Add an artist bio
+      - As a **site admin** I can **add an artist bio** so that **I can give the site users background information on the artist**
+  - US506 : Edit / update details for an artist bio
+      - As a **site admin** I can **edit / update details for an artist bio** so that **I can change or amend biographical details for the artist**
+  - US507 : Delete artist bio
+      - As a **site admin** I can **delete an artist** so that **I can remove the artist from the database**
+
+
+  </details>
+
+* EPIC 06 : SEO and Web Marketing
+  <details>
+      <summary>User Stories for EPIC01: </summary>
+
+  - US601 : Subscribe to newsletter
+      - As a **site user** I can **subscribe to the company newsletter** so that **I can keep up with company news and offers**
+  - US602 : View company facebook page
+      - As a **site user** I can **find the company on facebook** so that **I can keep up to date with company posts**
+  - US603 : SEO
+      - As a **site user** I can **find the site through web searches** so that **I can easily access the site**
+  - US604 : View privacy policy
+      - As a **site user** I can **view the company privacy policy** so that **I can see the company is GDPR compliant**
+
+  </details>
+
 
 ## Features
 
@@ -41,6 +161,7 @@ username shown on screen - limited to 12 chars
 likes (login required - this code is already there)
 subscribe list and facebook page
 privacy policy
+fb
 
 ### Existing Features
 
@@ -112,59 +233,47 @@ privacy policy
 
 ## Planning
 
-A GitHub Project with linked Issues was used as the Agile tool for this project.  User Stories with acceptance criteria were defined using GitHub Issues and development of code for these stories was managed using a Kanban board.  All of the User Stories were linked 'parent' Epic issues to show how they all supported the over-arching goal of the project.  The acceptance criteria were tested as each story moved to 'Done' and were also included in the final pre-submission manual testing documented in the Testing section of this README.
+A GitHub Project with linked Issues was used as the Agile tool for this project.  User Stories with acceptance criteria were defined using GitHub Issues and development of code for these stories was managed using a Kanban board.  All of the User Stories were linked to 'parent' Epic issues to show how they all supported the over-arching goals of the project.  The acceptance criteria were tested as each story moved to 'Done' and were also included in the final pre-submission manual testing documented in the Testing section of this README.
 
-The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agile Tool](????)
+The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agile Tool](https://github.com/elainebroche-dev/pf5-iomha-prints/projects/1)
 
 
 ## Technologies Used
 
-### Languages Used - to be written
+### Languages Used 
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [Jquery](https://jquery.com/) ??????????????????????
 -   [Python](https://www.python.org/)
 
-### Frameworks, Libraries & Programs Used  - to be written
+### Frameworks, Libraries & Programs Used  
 
--   [Google Fonts:](https://fonts.google.com/) used for the Lato and Old Standard TT fonts
+-   [Google Fonts:](https://fonts.google.com/) used for the Lato and Old Standard TT fonts.
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the project code after being pushed from Git. In addition, for this project GitHub was used for the agile development aspect through the use of User Stories (GitHub Issues) and tracking them on a Kanban board.
--   [Django](https://www.djangoproject.com/) was used as the framework to support rapid and secure development of the application
--   [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) used for account registration and authentication (version 0.41.0 installed because of project dependencies)
+-   [Django](https://www.djangoproject.com/) was used as the framework to support rapid and secure development of the application.
+-   [Bootstrap](https://getbootstrap.com/) was used to build responsive web pages
+-   [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) used for account registration and authentication (version 0.41.0 installed because of project dependencies).
 -   [Pillow](https://pillow.readthedocs.io/en/stable/index.html) - Python Imaging Library used for image handling
--   [jquery library](https://code.jquery.com/jquery-3.4.1.min.js) - for various pieces of functionality including adding and removing items from the shopping cart and handling the increment and decrement of the quantity control
--   [Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to simplify form rendering
--   [Stripe](https://js.stripe.com/v3/) used for secure payments (referenced in base.html)
--   [Stripe install library](https://pypi.org/project/stripe/) used for secure payments
--   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe
--   [Summernote](https://pypi.org/project/django-summernote/) used to provide WYSIWYG editing on the Artist Bio editing screen
--   [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku
--   [dj_database_url](https://pypi.org/project/dj-database-url/) library used to allow database urls to connect to the postgres db
--   [psycopg2](https://pypi.org/project/psycopg2/) database adapter used to support the connection to the postgres db
--   [Amazon S3](https://aws.amazon.com/s3/) used to store static files and images
--   [Boto3](https://pypi.org/project/boto3/) the Amazon Web Services (AWS) Software Development Kit (SDK) for Python
--   [django_storages](https://django-storages.readthedocs.io/en/latest/) used to connect django to S3
-
-
-to be written - list left here for reference
+-   [jquery library](https://code.jquery.com/jquery-3.4.1.min.js) - for various pieces of functionality including adding and removing items from the shopping cart and handling the increment and decrement of the quantity control.
+-   [Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to simplify form rendering.
+-   [Stripe](https://js.stripe.com/v3/) used for secure payments (referenced in base.html).
+-   [Stripe install library](https://pypi.org/project/stripe/) used for secure payments.
+-   [Django Countries](https://pypi.org/project/django-countries/) used on checkout page to pass valid country code to Stripe.
+-   [Summernote](https://pypi.org/project/django-summernote/) used to provide WYSIWYG editing on the Artist Bio editing screen.
+-   [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku.
+-   [dj_database_url](https://pypi.org/project/dj-database-url/) library used to allow database urls to connect to the postgres db.
+-   [psycopg2](https://pypi.org/project/psycopg2/) database adapter used to support the connection to the postgres db.
+-   [Amazon S3](https://aws.amazon.com/s3/) used to store static files and images.
+-   [Boto3](https://pypi.org/project/boto3/) the Amazon Web Services (AWS) Software Development Kit (SDK) for Python.
+-   [django_storages](https://django-storages.readthedocs.io/en/latest/) used to connect django to S3.
+-   [Heroku](https://www.heroku.com) - used to host the deployed application.
+-   [Heroku Postgres](https://www.heroku.com/postgres) - SQL database service provided by Heroku used to store models and data.
 -   [dbdiagram.io](https://dbdiagram.io/home) was used to create the Entity Relationship diagrams for the application data model
 -   [Balsamiq:](https://balsamiq.com/) was used to create the wireframes during the design process.
--   [Django](https://www.djangoproject.com/) was used as the framework to support rapid and secure development of the application
--   [Bootstrap](https://getbootstrap.com/) was used to build responsive web pages
--   [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku
--   [dj_database_url](https://pypi.org/project/dj-database-url/) library used to allow database urls to connect to the postgres db
--   [psycopg2](https://pypi.org/project/psycopg2/) database adapter used to support the connection to the postgres db
--   [Cloudinary](https://cloudinary.com/) used to store the images used by the application
 
-
--   [jquery library](https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js) used to fade out alert messages
--   [Django testing tools](https://docs.djangoproject.com/en/3.2/topics/testing/tools/) used for python mvt testing
--   [Jest](https://jestjs.io/) - used to test jquery in script.js
--   [coverage](https://coverage.readthedocs.io/en/coverage-5.5/) used to check how much of the python code has been covered by 
-automated tests
 
 ## Testing
 
@@ -319,13 +428,14 @@ Once code changes have been completed and tested on localhost, the application c
 - In the Heroku Config Vars for the application delete this environment variable :  DISABLE_COLLECTSTATIC
 - On the Heroku dashboard go to the Deploy tab for the application and click on deploy branch
 
-#### The live link to the application can be found here - [P5 Iomha Prints](??????) 
+#### The live link to the application can be found here - [P5 Iomha Prints](https://pf5-iomha-prints.herokuapp.com/) 
 
 
 ## Credits 
 
 ### Code 
 - Much of the coding and testing relies heavily on information in the "Boutique Ado" walkthrough in the Code Institue Building an E-Commerce Platform module. 
+- Some elements of the coding, such as the "like" functionality to add items to a wishlist are based on the "I Think Therefore I Blog" walkthrough in the Code Institute Full Stack Frameworks module.
 - Code to implement a bootstrap carousel was based on information found here : [W3 Schools Bootstrap Carousel](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp)
 - Code to make the carousel responsive was based on information found here : [Responsive Carousel](https://stackoverflow.com/questions/19582340/make-bootstraps-carousel-both-center-and-responsive)
 - Code to handle images and avoid distortion was based on information found here : [Image Scaling](https://stackoverflow.com/questions/5369301/css-image-scaling-to-fit-within-area-not-distort)
@@ -348,14 +458,71 @@ Once code changes have been completed and tested on localhost, the application c
 ### Content 
 - The website page layout look and feel were influenced by [Dunnes Stores Website](https://www.dunnesstores.com/), [Desenio](https://desenio.ie/) and [Art Prints](https://artprints.ie/)
 - The artist names are fictional and were generated using this website [Name Generator](https://www.random-name-generator.com/)
+- The artist bios are ficitonal and images for them were generated using this website [This Person Does Not Exist](https://thispersondoesnotexist.com/)
 
 ### Media 
-- The ??? font used was imported from [Google Fonts](https://fonts.google.com/)
-- Fontawesome was used for icons, including icons for ????? - [Font Awesome](https://fontawesome.com/)
+- The Old Standard TT and Lato fonts used were imported from [Google Fonts](https://fonts.google.com/)
+- Fontawesome was used for all icons, including icons for wishlist, user, print category, social media etc. - [Font Awesome](https://fontawesome.com/)
 - The application favicon was created from the images icon on [Font Awesome](https://fontawesome.com/) and created using information found here : [Icon as Favicon](https://stackoverflow.com/questions/18156240/use-font-awesome-icon-as-favicon) and [Favicon Generator](https://gauger.io/fonticon/)
-- The artists are ficitonal and images for them were generated using this website [This Person Does Not Exist](https://thispersondoesnotexist.com/)
+- The images used for the art prints were taken from [Negative Space](https://negativespace.co/) and [Unsplash](https://unsplash.com/). 
 
-- To be written ???????????????????
+    <details>
+      <summary>Links to the images and original artist names can be found here :</summary>
+     
+  - Artist : Alex Wong - [Image](https://unsplash.com/photos/l5Tzv1alcps)
+  - Artist : Bernard Spragg - [Image](https://negativespace.co/snowy-mountain-highway/)
+  - Artist : Bernard Spragg - [Image](https://negativespace.co/colorful-buildings-abstract/)
+  - Artist : Birch Landing - [Image](https://negativespace.co/shimmering-red-glitter/)
+  - Artist : Bob Richards - [Image](https://negativespace.co/rusted-metal-texture-background/)
+  - Artist : Bob Richards - [Image](https://negativespace.co/leaf-dew-rain/)
+  - Artist : Bonnie Moreland - [Image](https://negativespace.co/waterfall-forest-stream-park/)
+  - Artist : Bonnie Moreland - [Image](https://negativespace.co/snow-winter-landscape-trees/)
+  - Artist : Bonnie Moreland - [Image](https://negativespace.co/lone-tree-fog/)
+  - Artist : Bonnie Moreland - [Image](https://negativespace.co/old-barn-farm-stormy/)
+  - Artist : Bonnie Moreland - [Image](https://negativespace.co/trees-winter/)
+  - Artist : Burst - [Image](https://negativespace.co/soap-bubbles-macro/)
+  - Artist : Burst - [Image](https://negativespace.co/abstract-lights-on-a-frozen-surface/)
+  - Artist : Burst - [Image](https://negativespace.co/geometric-glass-building/)
+  - Artist : Candace McDaniel - [Image](https://negativespace.co/bridge-abstract-city-monochrome/)
+  - Artist : Candace McDaniel - [Image](https://negativespace.co/brooklyn-bridge-landmark/)
+  - Artist : Claudio Testa - [Image](https://unsplash.com/photos/iqeG5xA96M4)
+  - Artist : Dan Freeman - [Image](https://unsplash.com/photos/WHPsxhB4mWQ)
+  - Artist : Free Nature - [Image](https://negativespace.co/blue-night-sky-clouds/)
+  - Artist : Javier Diaz - [Image](https://negativespace.co/purple-white-dandellion-flower/)
+  - Artist : JJ Skys the Limit - [Image](https://negativespace.co/autumn-mountain-valley/)
+  - Artist : Joe deSousa - [Image](https://negativespace.co/eiffel-tower-closeup/)
+  - Artist : Joe deSousa - [Image](https://negativespace.co/white-flower-background/)
+  - Artist : Juskteez Vu - [Image](https://negativespace.co/stars-trail-sky-night-universe/)
+  - Artist : Kelly Ishmael - [Image](https://negativespace.co/water-leaf-macro/)
+  - Artist : Kumiko Shimizu - [Image](https://unsplash.com/photos/Pxa0yJ2Elxc)
+  - Artist : Lukasz Szmigiel - [Image](https://unsplash.com/photos/jFCViYFYcus)
+  - Artist : Matt Bango - [Image](https://negativespace.co/tree-stump-background/)
+  - Artist : Matt Bango - [Image](https://negativespace.co/moon-surface/)
+  - Artist : Matthew Henry - [Image](https://negativespace.co/ink-trail-water-pink/)
+  - Artist : Mike Moloney - [Image](https://negativespace.co/beach-sand-waves-day/)
+  - Artist : Nathalie E. Julien - [Image](https://negativespace.co/water-lotus-pond-bloom/)
+  - Artist : Natures Buddy - [Image](https://negativespace.co/macro-flower-blossom/)
+  - Artist : Pawel Czerwinski - [Image](https://unsplash.com/photos/ruJm3dBXCqw)
+  - Artist : Robert V. Ruggiero - [Image](https://unsplash.com/photos/hLvK16XVUqs)
+  - Artist : Silvestri Matteo - [Image](https://unsplash.com/photos/6-C0VRsagUw)
+  - Artist : Stephen Rahn - [Image](https://negativespace.co/night-starry-sky-galaxy/)
+  - Artist : Stephen Rahn - [Image](https://negativespace.co/nebula-with-stars/)
+  - Artist : Stephen Rahn - [Image](https://negativespace.co/moon-night-sky-dark/)
+  - Artist : Stephen Rahn - [Image](https://negativespace.co/night-stars/)
+  - Artist : Stephen Rahn - [Image](https://negativespace.co/moon-surface-craters-background/)
+  - Artist : Stephen Rahn - [Image](https://negativespace.co/star-trails/)
+  - Artist : Travel Photographer - [Image](https://negativespace.co/bokeh-lights-background/)
+  - Artist : Travel Photographer - [Image](https://negativespace.co/spiral-staircase-architecture/)
+  - Artist : Travel Photographer - [Image](https://negativespace.co/flower-rain-drops/)
+  - Artist : Vidsplay - [Image](https://negativespace.co/abstract-design-background/)
+  - Artist : Vidsplay - [Image](https://negativespace.co/colorful-abstract-design/)
+  - Artist : Vidsplay - [Image](https://negativespace.co/abstract-flowing-laser-light/)
+  - Artist : Vidsplay - [Image](https://negativespace.co/abstract-geometric-background/)
+  - Artist : Viktor Jakovlev - [Image](https://unsplash.com/photos/H0vuplqoX0c)
+  - Artist : Wyncliffe - [Image](https://negativespace.co/ocean-sunset-water/)
+  - Artist : Wyncliffe - [Image](https://negativespace.co/ocean-beach-rocks/)
+    </details>
+
   
 ### Acknowledgments
 
