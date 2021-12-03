@@ -1,4 +1,6 @@
+import datetime
 from django import forms
+from iomha_prints.widgets import CustomSelectDateWidget
 from .models import UserProfile
 
 
@@ -21,9 +23,10 @@ class UserProfileForm(forms.ModelForm):
             'default_street_address2': 'Street Address 2',
             'default_county': 'County, State or Locality',
         }
-
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:
+            if field == 'dob':
+                continue
             if field != 'default_country':
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
@@ -33,3 +36,9 @@ class UserProfileForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = \
                 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+    today = datetime.datetime.now()
+    dob = forms.DateField(label='Date of Birth', required=False,
+                          widget=CustomSelectDateWidget(empty_label=(
+                              "Choose Year", "Choose Month", "Choose Day"),
+                              years=range(today.year - 10, 1920, -1),),)
