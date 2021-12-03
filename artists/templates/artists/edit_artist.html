@@ -26,15 +26,13 @@
                 enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
-                {% if field.name == 'image' %}
-                {{ field }}
-                {% elif field.name == 'bio' %}
-
-                {{ field | safe }}
-
-                {% else %}
-                {{ field | as_crispy_field }}
-                {% endif %}
+                    {% if field.name == 'image' %}
+                        {{ field }}
+                    {% elif field.name == 'bio' %}
+                        {{ field | safe }}
+                    {% else %}
+                        {{ field | as_crispy_field }}
+                    {% endif %}
                 {% endfor %}
                 <div class="text-right">
                     <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>

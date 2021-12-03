@@ -25,11 +25,11 @@
             <form method="POST" action="{% url 'add_artist' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
-                {% if field.name != 'image' %}
-                {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
+                    {% if field.name != 'image' %}
+                        {{ field | as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
                 {% endfor %}
                 <div class="text-right">
                     <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
