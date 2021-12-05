@@ -8,6 +8,7 @@ General users can view details of the prints available for purchase including bi
 
 Admin users can manage the lists of prints and artists, this includes being able to add new prints to the range, update pricing, link artists to prints, update artist bio information.  A full description of the available functionality is included in this document.
 
+The structure and purpose of the Íomhá Prints project is based on the Code Institute Boutique Ado walkthrough example application.
 
 ![Mockup](documentation/supp-images/amiresponsive.png)
 
@@ -162,6 +163,12 @@ likes (login required - this code is already there)
 subscribe list and facebook page
 privacy policy
 fb
+dob for myprofile
+
+features that could be implemented :
+rating
+reviews
+use dob for myprofile
 
 ### Existing Features
 
@@ -193,7 +200,7 @@ fb
 
 -   ### Wireframes
 
-    The wireframe diagrams below describe the ??????? pages.  
+    The wireframe diagrams below describe the application web pages.  
 
     <details>
     <summary>Desktop Wireframes</summary>
@@ -211,24 +218,28 @@ fb
     ![Smartphone Wireframes](documentation/wireframes/smartphone.png)
     </details>
 
--   ### Entity-Relationship diagrams for DBMS
+
+-   ### Entity-Relationship diagram for DBMS
     
-      Notes on the ER diagrams :  - to be written ?????  leave this here as it may be useful
+      Notes on the ER diagram : 
 
-      - The ER diagrams provided show the logical data model.  The many-to-many relationship between hikes and their 'likes' is represented as normalized tables to clarify the relationship.  In the models.py file the 'likes' data item is declared as part of the Hike class, with django handling how this relationship is represented in the physical database tables in the background.
+      - The ER diagram provided shows the logical data model.  The many-to-many relationship between prints and their 'likes' is represented as normalized tables to clarify the relationship.  In the products models file the 'likes' data item is declared as part of the Print class, with django handling how this relationship is represented in the physical database tables in the background.
 
-      - The Users table in the ER diagrams is also a logical representation of the data captured during user registration and how it relates to the application data model.  The Users table itself is not declared in the models.py file, but is handled by the django modules and this logical view does not reflect all columns and constraints etc. used by the physical data tables in the database.
+      - The User table in the ER diagram is also a logical representation of the data captured during user registration and how it relates to the application data model.  The User table itself is not declared in the application models files, but is handled by the django modules and this logical view does not reflect all columns and constraints etc. used by the physical data tables in the database.
 
-      - The data model tables are split into two diagrams so that the relationships between the tables can be easily read.
+      - Like the application itself, the data models rely heavily on the models used in the Code Institute Boutique Ado example application.  The Order and OrderLineItem tables are almost a direct match of the ones using in Boutique Ado, the only differences being the foreign key of product is linked to the Print table instead of a Product table, and a column to store item_dimensions.
 
-      - A booking is a many-to-many relationship between Schedule and Users but because it also has its own data - places_reserved, it is declared in its own separate class in models.py
+      - The UserProfile table/model is also largely based on the one used in the Boutique Ado application, it has been customized by adding a DOB column so that the Customer's date of birth can be optionally captured and potentially used for birthday offers and promotions.
 
-      - Because there could be multiple guided hikes on the same hike trail in a single day, the schedule table needs a composite primary key of the hike_id and 'starts' column.  This is handled using a constraint in models.py.
+      - The Print table replaces the Boutique Ado Product table and has been customized heavily to reflect the information stored for this application.  In addition to a relationship with the OrderLineItem table, the Print table links to a new table for Artist data and a Category table that is similar to the one used by Boutique Ado.
+
+      - The PrintOption table is a new table that is used to store size and price options applicable to all print stock.  Like the PrintOption table, dimension data and price are also stored in the OrderLineItem table however there is no declared relationship between those data items and the dimesion and price data in the PrintOption table as the data in OrderLineItem records reflect a snapshot in time when a purchase was made whereas these items in the PrintOption table represent the current up-to-date values that are valid for new purchases.
+
 
     <details>
-    <summary>ER Diagrams - ??????</summary>
+    <summary>ER Diagram</summary>
 
-    ![ER Diagrams1](documentation/entity-relationship-diagrams/??????)
+    ![ER Diagrams1](documentation/entity-relationship-diagrams/er-diagram.png)
     </details>
 
 ## Planning
