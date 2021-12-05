@@ -8,6 +8,10 @@ General users can view details of the prints available for purchase including bi
 
 Admin users can manage the lists of prints and artists, this includes being able to add new prints to the range, update pricing, link artists to prints, update artist bio information.  A full description of the available functionality is included in this document.
 
+The Web Marketing strategies used by the project are :
+- Organic Social - through facebook
+- Email - through a newletter subscription managed via Mailchimp
+
 The structure and purpose of the Íomhá Prints project is based on the Code Institute Boutique Ado walkthrough example application.
 
 ![Mockup](documentation/supp-images/amiresponsive.png)
@@ -148,40 +152,193 @@ The structure and purpose of the Íomhá Prints project is based on the Code Ins
 
 ## Features
 
-make notes here to say that many of the features are based on the walkthrough and some such as profile, and allauth are largely unchanged.  Others have been added to or customized for this project and ?? should the features list focus on the differences ?  or highlight them in some way ????
-bag.html needs work to make it responsive
-need to check out the pass reqs re business type
-the confirm on the delete of print and artist is very basic
-talk about filled in user icon when logged in, my home link on mobile menu, carousel, new arrivals, discounts
-search checks for artist name and title
-artist bio
-admin for artist, print and printoption
-summernote
-dateselect widget
-username shown on screen - limited to 12 chars
-likes (login required - this code is already there)
-subscribe list and facebook page
-privacy policy
-fb
-dob for myprofile
-
-features that could be implemented :
-rating
-reviews
-use dob for myprofile
-
 ### Existing Features
 
-- include SEO stuff and privacy policy info here.
-- discounts to be handled with boolean
-- new arrivals to be handled using added on date within a 3 month range
+Below are descriptions of the main features of the application.  Many of the features are based on the Boutique Ado walkthrough project and SEO and Web Marketing modules of the course.  
 
--   __F01 to be written__
+The Íomhá Prints application uses a B2C e-commerce model, selling directly to end customers with single online payments to cover purchases.
+
+- UX Related Features
+
+    -   __F01 - Consistent page look and feel__
+        
+        The page layout, navigation bar, header, footer, colours and fonts have a consistent look and feel on all pages of the website to give the user an intuitive easy to use experience.  The navigation bar is responsive on multiple screen sizes - on smaller screens it coverts to a 'burger' menu style. 
+        
+        ![F01 Large Screen](documentation/supp-images/f01-large-screen.png)
+
+        ![F01 Small Screen](documentation/supp-images/f01-small-screen.png)
+
+    -   __F02 - User logged in indicator__
+        
+        The user can easily see if they are logged in from the user icon at the top right of the screen.  If not logged in the user icon appears as an outline and has the text "Account" underneath, if logged in, the user icon is filled in and the user's username (max 12 chars) appears under the icon.  
+        
+        ![F02 Logged Out](documentation/supp-images/f02-logged-out.png)
+
+        ![F02 Logged In](documentation/supp-images/f02-logged-in.png)
+
+
+    -   __F03 - Home Page__
+        
+        The application home page includes an eye-catching carousel which displays a sample of the prints available for purchase on the site.  It also gives introductory content to clearly brief the user on the purpose of site and goal of of the company.  
+        
+        ![F03 Home Page](documentation/supp-images/f03-home-page.png)
+
+
+    -   __F04 - View Prints__
+        
+        The user can easily scroll through the list of prints available for purchase on the site by using the All Prints option in the navigation bar at the top of the screen. The list presented will show an image of the print and some details including title, category, number of likes and rating. A back-to-top button allows the user to quickly navigate back to the top of the screen.
+        
+        ![F04](documentation/supp-images/f04-list-of-prints.png)
+
+
+    -   __F05 - Filter and Search options__
+        
+        There are options available to the user on the navigation bar to filter the list of prints and allow them to restrict the results to items they are particularly interested in.  For example, the user can choose to just see prints for a particular category, or just new arrivals (added within the last 6 months) or just discounted prints.  The user can also restrict the list of results based on a search term which will attempt to find matches in the print titles and artist names.
+
+        The number of matching results is shown on screen and results can be ordered by rating, category, or title.
+        
+        ![F05](documentation/supp-images/f05-list-of-prints.png)
+
+    -   __F06 - View Print Details__
+        
+        By clicking on a print the user can access the Print Details page which will display the image, category, rating, number of likes, artist name, print options (size and price) and from here they can select the size and quantity of print they want and add them to their cart.  
+        
+        ![F06](documentation/supp-images/f06-print-detail.png)
+
+    -   __F07 - View Artist Details__
+        
+        From the Print Detail page (F06 above) the user can click on the artist name and view a short bio of the artist associated with the print and learn a bit about their background and work.  
+        
+        ![F07](documentation/supp-images/f07-artist-detail.png)
+
+
+    -   __F08 - Likes and Wishlist__
+        
+        If the user is logged in when they visit a Print Detail page (F06 above) they will have the opportunity to 'like' the print.  Clicking on the 'heart' icon will toggle the like/unlike setting for that user for that print.  Liking a print will add that print to the user's wishlist.  The wishlist option is available from the navigation bar - but is only visible when the user is logged in.  Adding items to their withlist enables the user to save items for purchase later.   
+        
+        ![F08](documentation/supp-images/f08-likes.png)
+
+        ![F08](documentation/supp-images/f08-wishlist.png)
+
+    -   __F09 - Custom HTTP 404 and 500 response pages__
+        
+        To help support a consistent user-experience and handle unexpected events in a user-friendly manner, custom pages are displayed for any unexpected 404 or 500 HTTP response codes.  
+        
+        ![F09 404 Response](documentation/supp-images/f09-404-response.png)
+
+        ![F09 500 Response](documentation/supp-images/f09-500-response.png)
+
+    -   __F10 - On-screen messages__
+        
+        Pop-up on-screen messages are used to let the user know the effects of their interactions with the application.  Events such as changing the contents of the shopping cart, submitting an order, logging in or out will result in a message appearing on screen to inform the user of what has happened, and if appropriate, give them an update on the contents of the shopping cart.
+        
+        ![F10](documentation/supp-images/f10-toast-example-1.png)
+
+        ![F10](documentation/supp-images/f10-toast-example-2.png)
     
-    To be written  
     
-    ![?????](documentation/supp-images/)
+- Authentication and Role-based Authorisation Related Features
+
+    -   __F11 - Registration, Login, Logout__
+        
+        Users can register (sign-up) with the site, login (sign-in) and logout (sign-out).  Some features such as the wishlist are only available to logged in users (see F12 below for information on role based interactions).  When registering, users are asked to confirm their email addresses in order to activate the account.
+        
+        ![F11 Register](documentation/supp-images/f11-register.png)
+        
+        ![F11 Login](documentation/supp-images/f11-login.png)
+                      
+        ![F11 Logout](documentation/supp-images/f11-logout.png)
+
+    -   __F12 - Role based interactions__
+        
+        Certain functionality within the application is role based.  For example, in order to 'like' a print and add it to their wishlist or save profile information, a user needs to be logged in.
+
+        In addition, data managment tasks such as adding prints or artist information to the website, or changing pricing, are actions which can only be performed by a logged in admin (superuser).  
+        
+        ![F12 Profile](documentation/supp-images/f12-profile.png)
+
+        ![F12 Management](documentation/supp-images/f12-print-management.png)
+
+    -   __F13 - User Profile__
+        
+        If logged/signed in a user can opt to save their delivery address and/or birthday in their profile.  The My Profile page can be accessed via clicking the user icon.   If delivery details have been stored for a user then their details are automatically pre-populated on the checkout page making it quicker and easier for them to checkout.  The profile information can easily be changed simply overwritting the pre-populated values and opting to save this new information on submission of the order, or they can be updated directly via the My Profile page. 
+
+        By giving the user the option of storing their date of birth, this allows the company to track additional information about the user than could be used in marketing - for example offering a special discount on their birthday to encourage them to purchase.
+        
+        ![f13](documentation/supp-images/f13-profile-page.png)
+
+- E-Commerce Related Features
+    (???? mention B2C here)
+
+    -   __F14 - Shopping Cart__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
     
+    -   __F15 - Secure Payments__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+
+    -   __F16 - Order Confirmation and Order History__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+ 
+
+- Data Administration Related Features
+
+    -   __F17 - Print Management__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+    
+    -   __F18 - Print Option Management__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+
+    -   __F19 - Artist Management__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+
+
+- SEO, GDPR and Marketing Related Features
+    - SEO (include sitemap and robotls mentions here) - talk about how keywords where determined and where they were used
+    - Subscribe to Newsletter
+    - Facebook
+    - Privacy Policy
+
+    -   __F20 - SEO__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+    
+    -   __F21 - Subscribe to Newletter__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+
+    -   __F22 - Facebook__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
+
+    -   __F23 - Privacy Policy__
+        
+        To be written  
+        
+        ![?????](documentation/supp-images/)
 
 -   __How these features support the user stories__
     
@@ -194,7 +351,10 @@ use dob for myprofile
 
 -   __to be written__
     
-    to be written
+    DOB captured
+    improve on the delete comfirmation message
+    Improved datepicker for artist mgt and user dob
+    reviews and testimonials - could feed into ratings
 
 ## Design
 
@@ -225,9 +385,9 @@ use dob for myprofile
 
       - The ER diagram provided shows the logical data model.  The many-to-many relationship between prints and their 'likes' is represented as normalized tables to clarify the relationship.  In the products models file the 'likes' data item is declared as part of the Print class, with django handling how this relationship is represented in the physical database tables in the background.
 
-      - The User table in the ER diagram is also a logical representation of the data captured during user registration and how it relates to the application data model.  The User table itself is not declared in the application models files, but is handled by the django modules and this logical view does not reflect all columns and constraints etc. used by the physical data tables in the database.
+      - The User table in the ER diagram is also a logical representation of the data captured during user registration and how it relates to the application data model.  The User table itself is handled by the django modules and this logical view does not reflect all columns and constraints etc. used by the physical data tables in the database.
 
-      - Like the application itself, the data models rely heavily on the models used in the Code Institute Boutique Ado example application.  The Order and OrderLineItem tables are almost a direct match of the ones using in Boutique Ado, the only differences being the foreign key of product is linked to the Print table instead of a Product table, and a column to store item_dimensions.
+      - Like the application itself, the data models rely heavily on the models used in the Code Institute Boutique Ado example application.  The Order and OrderLineItem tables are almost a direct match of the ones using in Boutique Ado, the only customizations being the foreign key of product is linked to the Print table instead of a Product table, and a column to store item_dimensions.
 
       - The UserProfile table/model is also largely based on the one used in the Boutique Ado application, it has been customized by adding a DOB column so that the Customer's date of birth can be optionally captured and potentially used for birthday offers and promotions.
 
@@ -255,7 +415,7 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [Jquery](https://jquery.com/) ??????????????????????
+-   [Jquery](https://jquery.com/) 
 -   [Python](https://www.python.org/)
 
 ### Frameworks, Libraries & Programs Used  
@@ -334,14 +494,8 @@ binds the actual field and not just a string representing it's name.
     ![Project urls.py](documentation/testing/validation/??????????)
   </details>
 
-### Automated Testing - to be written - may not need this
-
-### Browser Compatibility
-
-- Chrome DevTools was used to test the responsiveness of the application on different screen sizes.  In addition, testing has been carried out on the following browsers :
-    - to be written
  
-### Manual Testing Test Cases and Results - to be written
+### Manual Testing Test Cases and Results 
 
 - The link below details the test cases that were used, the results, and a cross-reference to the Feature ID that each test case exercised (click link to open pdf).  The test cases are primarily based on the User Story acceptance criteria that were used to test iterations of the code during development.
   
@@ -357,14 +511,14 @@ Detailed below are instructions on how to clone this project repository and the 
 
 1. How to Clone the Repository
 2. Create Application and Postgres DB on Heroku
-3. Configure Cloudinary to host images used by the application
-4. Connect the Heroku app to the GitHub repository
-5. Executing automated tests
-6. Final Deployment steps
+3. Connect the Heroku app to the GitHub repository 
+
+4. Configure Amazon Web Services S3 to store static files and images
+5. Configure STRIPE config vars and webhooks
 
 ### How to Clone the Repository 
 
-- Go to the https://github.com/elainebroche-dev/pf4-wayfarers-guided-hikes repository on GitHub 
+- Go to the https://github.com/elainebroche-dev/pf5-iomha-prints repository on GitHub 
 - Click the "Code" button to the right of the screen, click HTTPs and copy the link there
 - Open a GitBash terminal and navigate to the directory where you want to locate the clone
 - On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
@@ -377,6 +531,7 @@ Detailed below are instructions on how to clone this project repository and the 
   - git push
 
 - N.B. Any changes pushed to the master branch will take effect on the live project once the application is re-deployed from Heroku
+- N.B. Be careful not to upload DEBUG=True in the settings.py file to GitHub - this setting should only be used locally.
 
 ### Create Application and Postgres DB on Heroku
 - Log in to Heroku at https://heroku.com - create an account if needed.
@@ -394,50 +549,97 @@ Detailed below are instructions on how to clone this project repository and the 
   - SECRET_KEY = os.environ.get('SECRET_KEY')
 
 - In Gitpod, in the project terminal window, to initialize the data model in the postgres database, run the command : python3 manage.py migrate 
-- Make sure the project requirements.txt file is up to date with all necessary supporting files by entering the command : pip3 freeze --local > requirements.txt
+- Set up and admin user in the postgres db using the command : python3 manage.py createsuperuser
+- Set DEBUG flag to False in settings.py
 - Commit and push any local changes to GitHub.
 - In order to be able to run the application on localhost, add SECRECT_KEY and DATABASE_URL and their values to env.py
 
-### Configure Cloudinary to host images used by the application
-- Log in to Cloudinary - create an account if needed.  To create the account provide your name, email and set up a password.  For "primary interest" you can choose "Programmable Media for image and video API".  Click "Create Account" and you will be sent an email to verify your account and bring you to the dashboard.
-- From the dashboard, copy the "API Environment variable" value by clicking on the "Copy to clipboard" link.
-- Log in to Heroku and go to the Application Configuration page for the application.  Click on Settings and click on the "Reveal Config Vars" button.
-- Add a new Config Var called CLOUDINARY_URL and assign it the value copied from the Cloudinary dashboard, but remove the "CLOUDINARY_URL=" at the beginning of the string. 
-- In order to be able to run the application on localhost, also add the CLOUDINARY_URL environment variable and value to env.py
-
 ### Connect the Heroku app to the GitHub repository
 - Go to the Application Configuration page for the application on Heroku and click on the Deploy tab.
-- Select GitHub as the Deployment Method and if prompted, confirm that you want to connect to GitHub. Enter the name of the github repository (the one used for this project is (https://github.com/elainebroche-dev/pf4-wayfarers-guided-hikes) and click on Connect to link up the Heroku app to the GitHub repository code.
+- Select GitHub as the Deployment Method and if prompted, confirm that you want to connect to GitHub. Enter the name of the github repository (the one used for this project is (https://github.com/elainebroche-dev/pf5-iomha-prints) and click on Connect to link up the Heroku app to the GitHub repository code.
 - Scroll down the page and choose to either Automatically Deploy each time changes are pushed to GitHub, or Manually deploy - for this project Manual Deploy was selected.
 - The application can be run from the Application Configuration page by clicking on the Open App button.
-- The live link for this project is (https://pf4-wayfarers.herokuapp.com/)
+- The live link for this project is (https://pf5-iomha-prints.herokuapp.com/)
 
-### Executing automated tests
-- The existing automated jquery/javascript test can be executed using jest as follows :
-  - If jest is not installed then run the command : npm install --save-dev jest
-  - Run the js test file using the command : npm test
+### Configure Amazon Web Services S3 to store static files and images
+- Log on to AWS account on aws.amazon.com - create an account if necessary
+- From the dashboard access the S3 services
+- Create a new 'bucket', it is recommended to give this a name similar to your application to make it easy to remember and use, choose a region close to you, uncheck "Block all public access" and acknowledge that the bucket will be public.  Next, click on the new bucket to configure it.
+- Go to the properties tab and turn on static website hosting, fill in default values for index and error document settings - e.g. index.html and error.html and click on Save.
+- Go to the permissions tab and make 3 changes to configure the bucket :
 
-- The existing automated django/python tests are executed using unittest as follows :
-  - Run the python tests using the command : python3 manage.py test
-  - To run just a subset of the tests, then append the application and test file name to the command, e.g. : python3 manage.py test hikebooker.test_models
+    - Step 1 Configure CORS : 
+        - Paste the following CORS configuration string :
+    	[
+            {
+                "AllowedHeaders": [
+                    "Authorization"
+                ],
+                "AllowedMethods": [
+                    "GET"
+                ],
+                "AllowedOrigins": [
+                    "*"
+                ],
+                "ExposeHeaders": []
+            }
+        ]
 
-- Test coverage for the django/python tests can be reviewed using the coverage tool :
-  - If coverage is not installed then run the command : pip3 install coverage
-  - Execute the following series of commands to determine test coverage :
-    - coverage run --source=hikebooker manage.py test
-    - coverage report
-    - coverage html
-    - python3 -m http.server  (detailed results can be viewed via the browser in the htmlcov directory)
+    - Step 2 Generate Policy:
+        - Go to the bucket policy area, click on Edit and click on policy generator.  
+        - Choose S3 bucket policy from drop-down
+	    - Put asterisk in Principal field
+	    - Select get object from Actions drop-down
+	    - Copy ARN and paste into ARN box on the policy generator page
+	    - Click Add Statement
+	    - Click Generate Policy then copy the policy into the policy editor window
+        - Add /* to the end of the Resource key
+	    - Click Save
 
+    - Step 3 ACL :
+        - Go to the Access Control List area
+		- Set the list objects permission for everyone under the Public Access section and
+		check the box to confirm you want this permission setting
 
-### Final Deployment steps
-Once code changes have been completed and tested on localhost, the application can be prepared for Heroku deployment as follows :
-- Set DEBUG flag to False in settings.py
-- Ensure this line exists in settings.py to make summernote work on the deployed environment (CORS security feature): X_FRAME_OPTIONS = 'SAMEORIGIN'
-- Ensure requirements.txt is up to date using the command : pip3 freeze --local > requirements.txt
-- Push files to GitHub
-- In the Heroku Config Vars for the application delete this environment variable :  DISABLE_COLLECTSTATIC
-- On the Heroku dashboard go to the Deploy tab for the application and click on deploy branch
+- Create a user to access the bucket through IAM as follows :
+    - Return to the services menu on the dashboard and access the IAM area
+    - Create a group
+    - On the same page click on Policies, then Create Policy, go to JSON table and select Import Managed Policy
+    - Click on Import managed policy on rhs
+	- Search for S3 and select AmazonS3FullAccess and click on Import
+	- Go back and get the Bucket Policy ARN (generated when bucket was created)
+	- Change the Resource value from * to ARN bucket and it's contents - e.g :
+        "Resource": [
+                    "arn:aws:s3:::pf5-iomha-prints",  (sensitive)
+                    "arn:aws:s3:::pf5-iomha-prints/*"
+                ]
+	- Click Next and then Review Policy
+	- Give the policy a name and click Create Policy
+    - Attach the policy to the group you created as follows : Go to groups, click on your group, go to the Permissions tab, click Add permissions and select Attach policies, select the policy created on previous step and click Attach permissions
+    - Create user to put into the group. Click Users on lhs, click Add User, assign name check the programmatic access checkbox, click on Next:Permissions.  Add user to group, click through to the end and click Create User.
+
+- Download and save the generated csv which contains the users access and secret access keys
+- Update the AWS section of the settings.py file - replace the bucket name and region with the values you set up in the previous steps :
+
+			if 'USE_AWS' in os.environ:
+				# Bucket Config
+				AWS_STORAGE_BUCKET_NAME = 'pf5-iomha-prints'    <------ bucket name and region
+				AWS_S3_REGION_NAME = 'eu-west-1'
+				AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+				AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
+- Add the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY config vars to heroku using the values from the downloaded cvs
+- Add USE_AWS = True to the Heroku config vars
+- Remove the DISABLE_COLLECTSTATIC config var at this point from Heroku
+- The custom_storages.py file that is part of this project will tell Django to use S3 to store static and media files when collectstatic is run
+- The remaining AWS configuration settings needed are already configured in this projects settings.py file
+- Go to the S3 dashboard and create a folder called media in the new bucket.  Specify grant public-read access on the folder and tick the checkbox to confirm.
+
+### Configure STRIPE config vars and webhooks
+- Log in to your Stripe account - create one if necessary
+- Add STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY to the Heroku config vars, assign these variables values from your Stripe account dashboard
+- Create a webhook endpoint for use with your applications.  On the stripe dashboard go to the Developers -> Webhooks area, click add endpoint, use the url of your Heroku application with '/checkout/wh/' tagged onto the end of the url string.  When configuring the endpoint, the events to register to listen to are payment_intent_succeeded and payment_intent_failed
+- Once the endpoint is set up get the signing secret for the webhooks and save this value as a Heroku config var called STRIPE_WH_SECRET.
 
 #### The live link to the application can be found here - [P5 Iomha Prints](https://pf5-iomha-prints.herokuapp.com/) 
 
