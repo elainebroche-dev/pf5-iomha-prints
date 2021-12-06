@@ -178,7 +178,6 @@ body {
     font-family: Lato;
     font-weight: 600;
     text-align: center;
-
 }
 
 .btn-like {
@@ -539,4 +538,3 @@ input[name='q']::placeholder {
         text-align: center;
     }
 }
-
