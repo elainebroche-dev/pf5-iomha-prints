@@ -33,7 +33,7 @@
                 <p class="mb-0"><strong>Name: </strong>{{ artist.name }}</p>
                 <p class="mb-0"><strong>Date of Birth: </strong>{{ artist.dob }}</p>
                 <p class="mb-3"><strong>Nationality: </strong>{{ artist.nationality }}</p>
-                <p class="mb-0">{{ artist.bio | safe}}</p>
+                <div class="mb-0">{{ artist.bio | safe}}</div>
             </div>
             {% if request.user.is_superuser %}
             <div class="row mb-4">
