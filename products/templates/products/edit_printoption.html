@@ -38,7 +38,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('select').on('change', function () {
         var url = "{% url 'edit_printoption' 123 %}"
         location.href = url.replace('123', this.value);
