@@ -2,7 +2,9 @@
 
 [View the live project here](https://pf5-iomha-prints.herokuapp.com/)
 
-The Íomhá Prints project is a B2C e-commerce application which sells art prints directly to end users.  It is implemented as a retail store where users can view, search and filter the products on offer, then select items to add to their shopping cart and purchase through a simple single payment.
+The Íomhá Prints project is a B2C e-commerce application which sells art prints directly to end users.  The site aims to present customers with an attractive and intuitive online shopping experience and encourage return visits through features such as discounts, a newsletter, social media posts, and an easy to use user profile to record customer details.
+
+The site is implemented as a retail store where users can view, search and filter the products on offer, then select items to add to their shopping cart and purchase through a simple secure single payment.
 
 General users can view details of the prints available for purchase including bio information on the print artist, and can sign up to the company newletter. In addition, registered users can create a wishlist of prints they may be interested in and a profile to keep track of delivery details and order history.
 
@@ -191,13 +193,17 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         ![F04](documentation/supp-images/f04-list-of-prints.png)
 
 
-    -   __F05 - Filter and Search options__
+    -   __F05 - Filter, Search and Sort options__
         
         There are options available to the user on the navigation bar to filter the list of prints and allow them to restrict the results to items they are particularly interested in.  For example, the user can choose to just see prints for a particular category, or just new arrivals (added within the last 6 months) or just discounted prints.  The user can also restrict the list of results based on a search term which will attempt to find matches in the print titles and artist names.
 
         The number of matching results is shown on screen and results can be ordered by rating, category, or title.
         
         ![F05](documentation/supp-images/f05-list-of-prints.png)
+
+        In addition, results can be sorted by rating or by category using the navigation bar drop-down options under All Prints.  Alternatively, the sort box on the screen can sort by rating, category and print title.
+
+        ![F05](documentation/supp-images/f05-sort-options.png)
 
     -   __F06 - View Print Details__
         
@@ -265,96 +271,144 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         By giving the user the option of storing their date of birth, this allows the company to track additional information about the user than could be used in marketing - for example offering a special discount on their birthday to encourage them to purchase.
         
-        ![f13](documentation/supp-images/f13-profile-page.png)
+        ![F13 User Profile](documentation/supp-images/f13-profile-page.png)
 
 - E-Commerce Related Features
-    (???? mention B2C here)
 
     -   __F14 - Shopping Cart__
         
-        To be written  
+        The application uses a 'shopping cart' to track items the user wants to purchase.  This is a common and intuitive metaphor that online shoppers are familiar with and so helps make the application user-friendly.  The shopping cart running total is shown under the shopping cart icon in the top right of the screen and is available on all site pages.
+
+        As items are added to the cart, the total is updated to reflect the cost, taking into consideration any discounts, and the user is shown a summary of what is in the cart in a small pop-up window.
+
+        By clicking on the shopping cart icon the user can view the shopping cart page.  From here they can adjust quanities of the items in the cart or remove them completely.  From this page the user can choose to return to continue shopping or proceed to checkout.
         
-        ![?????](documentation/supp-images/)
+        ![F14 Shopping Cart Icon](documentation/supp-images/shopping-cart-icon.png)
+
+        ![F14 Shopping Cart](documentation/supp-images/shopping-cart.png)
     
-    -   __F15 - Secure Payments__
+    -   __F15 - Checkout and Secure Payments__
         
-        To be written  
+        When the user is ready to complete their order they can navigate to the Checkout page.  Here they can enter their details, delivery address and credit card details.  If they have a user profile set up (F13 above) then the delivery details are pre-polulated with their previously stored address.  Also on the checkout page, if logged in, the user can choose to save new delivery details to their profile.
+
+        Payments are securely handled by Stripe widgets in the application, and webhooks are used to ensure that transactions are handled correctly in the case of any problems encountered during payment processing.
         
-        ![?????](documentation/supp-images/)
+        ![F15 Checkout](documentation/supp-images/f15-checkout.png)
 
     -   __F16 - Order Confirmation and Order History__
         
-        To be written  
+        Once an order has been submitted and payment processed, the user is shown an Order Confirmation page and is also sent an email with a summary of the order.
+
+        By accessing the My Profile page, users can view their order history.  
         
-        ![?????](documentation/supp-images/)
+        ![F16 Order Confirmation](documentation/supp-images/order-confirmation.png)
+
+        ![F16 Order Confirmation Email](documentation/supp-images/order-confirmation-email.png)
+
+        ![F16 Order History](documentation/supp-images/order-history.png)
  
 
 - Data Administration Related Features
 
     -   __F17 - Print Management__
         
-        To be written  
+        This feature is only available to site administrators.  Admin users can add, edit and delete prints on the website to manage the items available for purchase.  The add print functionality is accessed by clicking on the user icon and selecting Print Management.  The edit and delete functionality can be accessed from the print list and print detail list pages (F04 and F06).
+
+        Once a print is added it becomes visible to customers and can be added to their carts.  If a print is deleted it is removed from the site.  If the admin user attempts to delete a print they are first prompted to confirm the action, to avoid accidentally deleting a print.
         
-        ![?????](documentation/supp-images/)
+        ![F17 Add a print](documentation/supp-images/f17-add-print.png)
+
+        ![F17 Edit or Delete a print](documentation/supp-images/f17-edit-delete-print.png)
     
     -   __F18 - Print Option Management__
         
-        To be written  
+        This feature is only available to site administrators. Admin users can edit the print options to update the dimension values or update pricing.  
         
-        ![?????](documentation/supp-images/)
+        ![F18 Print Option Management](documentation/supp-images/f18-print-option.png)
 
     -   __F19 - Artist Management__
         
-        To be written  
-        
-        ![?????](documentation/supp-images/)
+        This feature is only available to site administrators.  Admin users can add, edit and delete artists in the store database.  The add artist functionality is accessed by clicking on the user icon and selecting Artist Management.  The edit and delete functionality can be accessed from the artist detail list page (F07).
 
+        Once an artist is added it becomes available to link to existing prints.  If an artist is deleted it is removed from the database and any linked prints will show as artist unknown.  If the admin user attempts to delete an artist they are first prompted to confirm the action, to avoid accidental deletions.
+        
+        ![F19 Add an artist](documentation/supp-images/f19-add-artist.png)
+
+        ![F19 Edit or Delete an artist](documentation/supp-images/f19-edit-delete-artist.png)
+    
 
 - SEO, GDPR and Marketing Related Features
-    - SEO (include sitemap and robotls mentions here) - talk about how keywords where determined and where they were used
-    - Subscribe to Newsletter
-    - Facebook
-    - Privacy Policy
 
     -   __F20 - SEO__
         
-        To be written  
-        
-        ![?????](documentation/supp-images/)
+        A number of steps were implemented in this project to address SEO (Site Engine Optimization) - these included the use of relevant keywords and phrases in the following areas :
+        - Informative alt tags
+        - "description" and "keyword" meta tags in the html
+        - Appropriate site title and home page content
+        - Informative site heading slogan on home page
+
+        The process to determine the most useful keywords and phrases was as follows :
+        - Initial brainstorm of keywords and terms associated with the items on sale and the target customer audience
+        - Use of google search auto-complete to come up with different ideas and long-tail keywords
+        - Use of wordtracker.com to come up with some other alternatives and narrow down the list to the keywords most relevant to the target market
+
+        Keywords and phrases identifed as most useful include :
+        Art, image, poster, print, inspirational image, gift, wall art, wall decor, abstract, architectural, photos, high quality, motivate, ambience,
+        purchase, finishing touch, artist
+
+        sitemap.xml and robots.txt files have also been added to the application to assist search engine crawling.
     
     -   __F21 - Subscribe to Newletter__
         
-        To be written  
+        As part of the web marketing strategy for the application, functionality to subscribe to a company newsletter was added.  The subscribe feature is available in the footer of each page on the site.  The user simply has to enter an email address and click on the Subscribe button to sign up.  The subscription list is managed by mailchimp website https://mailchimp.com/.  
         
-        ![?????](documentation/supp-images/)
+        ![F21 Subscribe](documentation/supp-images/f21-subscribe.png)
+
+        ![F21 Subscription List](documentation/supp-images/f21-subscription-list.png)
 
     -   __F22 - Facebook__
         
-        To be written  
+        Another part of the web marketing strategy is to use social media to promote the site.  A Facebook book for the company was created and a link to this appears in the footer of each page on the site.  See below for the link to the company page and screen shots.
         
-        ![?????](documentation/supp-images/)
+        Íomhá Prints link to Facebook : https://www.facebook.com/%C3%8Domh%C3%A1-Prints-102662235595682See  
+        
+        ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-link.png)
+
+        ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-1.png)
+
+        ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-2.png)
+
+        ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-3.png)
 
     -   __F23 - Privacy Policy__
         
-        To be written  
+        To address GDPR requirements, a privacy policy was generated using the website https://www.privacypolicygenerator.info/.  The policy was then downloaded and incorporated into a page within the Íomhá Prints application.  The privacy policy page can be access via a link on the footer of each page.
         
-        ![?????](documentation/supp-images/)
+        ![F23 Privacy Policy Link](documentation/supp-images/f23-privacy-policy-link.png)
+
+        ![F23 Privacy Policy](documentation/supp-images/f23-privacy-policy.png)
 
 -   __How these features support the user stories__
     
-    The User Stories in the [User Experience (UX)](#user-experience-ux) part of this document are numbered 1 to ?????.  The existing features are listed above as F01 to ?????.  Below is a traceability matrix cross-referencing the user stories with the features, illustrating which features support which stories :
+    There are 38 User Stories in the [User Experience (UX)](#user-experience-ux) part of this document split between 6 Epics.  The existing features are listed above as F01 to F23.  Below is a traceability matrix cross-referencing the user stories with the features, illustrating which features support which stories :
         
     ![User Story Feature Matrix](documentation/supp-images/traceability-matrix.png)
 
 
 ### Features which could be implemented in the future
 
--   __to be written__
-    
-    DOB captured
-    improve on the delete comfirmation message
-    Improved datepicker for artist mgt and user dob
-    reviews and testimonials - could feed into ratings
+-   __Reviews and Testimonals__
+
+    Having a page where customers could add their reviews and read feedback from other customers would help to build confidence in the site brand and probably improve the site rating with online search engines.
+
+-   __Improvements to user interactions__
+
+    The prompte to confirm a delete of a print or artist is very basic and should be improved to fit in better with the overall look and feel of the website.  Similarly, the date picker controls on the artist bio management pages and on the My Profile page should be improved.
+
+-   __My Profile DOB__
+
+    The customer's DOB is optionally saved on the My Profile page but apart from a message on screen to say that the customer will get discounts on their birthday nothing is currently done with this data.  Functionality could be added to interact with the user on special dates such as their birthday or holidays to encourage them to increase their purchasing on the site.
+
 
 ## Design
 
@@ -507,12 +561,11 @@ binds the actual field and not just a string representing it's name.
 
 ## Deployment  - leaving this here for now but all needs to be rewritten
 
-Detailed below are instructions on how to clone this project repository and the steps to configure and deploy the application.  Code Institute also provides a summary of similar process steps here : [CI Cheat Sheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf)
+Detailed below are instructions on how to clone this project repository and the steps to configure and deploy the application.  
 
 1. How to Clone the Repository
 2. Create Application and Postgres DB on Heroku
 3. Connect the Heroku app to the GitHub repository 
-
 4. Configure Amazon Web Services S3 to store static files and images
 5. Configure STRIPE config vars and webhooks
 
