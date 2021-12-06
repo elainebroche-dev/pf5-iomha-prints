@@ -160,7 +160,7 @@ Below are descriptions of the main features of the application.  Many of the fea
 
 The Íomhá Prints application uses a B2C e-commerce model, selling directly to end customers with single online payments to cover purchases.
 
-- UX Related Features
+- **UX Related Features**
 
     -   __F01 - Consistent page look and feel__
         
@@ -232,7 +232,6 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         ![F09 404 Response](documentation/supp-images/f09-404-response.png)
 
-        ![F09 500 Response](documentation/supp-images/f09-500-response.png)
 
     -   __F10 - On-screen messages__
         
@@ -243,7 +242,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         ![F10](documentation/supp-images/f10-toast-example-2.png)
     
     
-- Authentication and Role-based Authorisation Related Features
+- **Authentication and Role-based Authorisation Related Features**
 
     -   __F11 - Registration, Login, Logout__
         
@@ -265,6 +264,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         ![F12 Management](documentation/supp-images/f12-print-management.png)
 
+
     -   __F13 - User Profile__
         
         If logged/signed in a user can opt to save their delivery address and/or birthday in their profile.  The My Profile page can be accessed via clicking the user icon.   If delivery details have been stored for a user then their details are automatically pre-populated on the checkout page making it quicker and easier for them to checkout.  The profile information can easily be changed simply overwritting the pre-populated values and opting to save this new information on submission of the order, or they can be updated directly via the My Profile page. 
@@ -273,7 +273,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         ![F13 User Profile](documentation/supp-images/f13-profile-page.png)
 
-- E-Commerce Related Features
+- **E-Commerce Related Features**
 
     -   __F14 - Shopping Cart__
         
@@ -283,9 +283,9 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         By clicking on the shopping cart icon the user can view the shopping cart page.  From here they can adjust quanities of the items in the cart or remove them completely.  From this page the user can choose to return to continue shopping or proceed to checkout.
         
-        ![F14 Shopping Cart Icon](documentation/supp-images/shopping-cart-icon.png)
+        ![F14 Shopping Cart Icon](documentation/supp-images/f14-shopping-cart-icon.png)
 
-        ![F14 Shopping Cart](documentation/supp-images/shopping-cart.png)
+        ![F14 Shopping Cart](documentation/supp-images/f14-shopping-cart.png)
     
     -   __F15 - Checkout and Secure Payments__
         
@@ -295,20 +295,24 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         ![F15 Checkout](documentation/supp-images/f15-checkout.png)
 
+        ![F15 Stripe](documentation/supp-images/f15-stripe.png)
+
+        ![F15 Stripe](documentation/supp-images/f15-webhooks.png)
+
     -   __F16 - Order Confirmation and Order History__
         
         Once an order has been submitted and payment processed, the user is shown an Order Confirmation page and is also sent an email with a summary of the order.
 
         By accessing the My Profile page, users can view their order history.  
         
-        ![F16 Order Confirmation](documentation/supp-images/order-confirmation.png)
+        ![F16 Order Confirmation](documentation/supp-images/f16-order-confirmation.png)
 
-        ![F16 Order Confirmation Email](documentation/supp-images/order-confirmation-email.png)
+        ![F16 Order Confirmation Email](documentation/supp-images/f16-order-confirmation-email.png)
 
-        ![F16 Order History](documentation/supp-images/order-history.png)
+        ![F16 Order History](documentation/supp-images/f16-order-history.png)
  
 
-- Data Administration Related Features
+- **Data Administration Related Features**
 
     -   __F17 - Print Management__
         
@@ -337,7 +341,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         ![F19 Edit or Delete an artist](documentation/supp-images/f19-edit-delete-artist.png)
     
 
-- SEO, GDPR and Marketing Related Features
+- **SEO, GDPR and Marketing Related Features**
 
     -   __F20 - SEO__
         
@@ -377,8 +381,6 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-1.png)
 
         ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-2.png)
-
-        ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-3.png)
 
     -   __F23 - Privacy Policy__
         
@@ -504,62 +506,85 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 
 ### Validator Testing 
 
-- python warning : Unused variable field_name in artists/forms.py - code is formatted this way so that the field variable
-binds the actual field and not just a string representing it's name.
-
 - [HTML Validator](https://validator.w3.org/)
 
     - As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator (link shown above). 
 
-    - results for index.html
-      - <details>
-        <summary>Index Page - Summary</summary>
+    - Validation Results : <br>
+    errors reported in Add Artist and Edit Artist pages caused by summernote widget
 
-        ![Index Page - Summary](documentation/testing/validation/???????)
-      </details>
-
-      - <a href="?????" target="_blank">Index Page - Full HTML Validation Results</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Home%20Page.pdf" target="_blank">Home Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20View%20Prints%20Page.pdf" target="_blank">View Prints Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Print%20Detail.pdf" target="_blank">View Print Details Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Artist%20Bio%20Page.pdf" target="_blank">View Artist Details Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Register%20Page.pdf" target="_blank">Register Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Login%20Page.pdf" target="_blank">Login Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Logout%20Page.pdf" target="_blank">Logout Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Profile%20Page.pdf" target="_blank">Profile Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20404%20Page.pdf" target="_blank">404 Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Shopping%20Cart%20Page.pdf" target="_blank">Shopping Cart Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Checkout%20Page.pdf" target="_blank">Checkout Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Checkout%20Success%20Page.pdf" target="_blank">Checkout Success Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Add%20Artist%20Page.pdf" target="_blank">Add Artist Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Edit%20Artist.pdf" target="_blank">Edit Artist Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Edit%20Option%20Page.pdf" target="_blank">Edit Print Option Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Add%20Print%20Page.pdf" target="_blank">Add Print Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Edit%20Print%20Page.pdf" target="_blank">Edit Print Page</a>
+        - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/HTML%20Validation%20-%20Privacy%20Policy%20Page.pdf" target="_blank">Privacy Policy Page</a>
 
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-    - <details>
-      <summary>?????? validation results</summary>
+   - Validation Results:
 
-      ![style.css](documentation/testing/validation/?)
-      </details>
-
-    - <a href="???" target="_blank">CSS Validation - Full Results</a> 
+      - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/W3C%20CSS%20Validator%20results%20for%20checkout.css.pdf" target="_blank">PDF results for checkout css</a> 
+      - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/W3C%20CSS%20Validator%20results%20for%20profile.css.pdf" target="_blank">PDF results for profile css</a> 
+      - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/validation/W3C%20CSS%20Validator%20results%20for%20base.css.pdf" target="_blank">PDF results for base css</a> 
 
 
-- [Javascript Validator](https://jshint.com/)
+- Python Validation was performed using the command : python3 -m flake8.  No serious errors reported. Messages relevant to the project py files are as follows :
 
-  <details>
-    <summary>??????.js validation results</summary>
+    - ./artists/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+    - ./artists/migrations/0001_initial.py:17:80: E501 line too long (117 > 79 characters)
+    - ./artists/migrations/0001_initial.py:21:80: E501 line too long (82 > 79 characters)
+    - ./bag/admin.py:1:1: F401 'django.contrib.admin' imported but unused
+    - ./bag/models.py:1:1: F401 'django.db.models' imported but unused
+    - ./bag/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+    - ./checkout/apps.py:8:9: F401 'checkout.signals' imported but unused
+    - ./checkout/models.py:23:16: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./checkout/models.py:26:23: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./checkout/models.py:27:14: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./checkout/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+    - ./checkout/webhooks.py:28:5: F841 local variable 'e' is assigned to but never used
+    - ./checkout/webhooks.py:31:5: F841 local variable 'e' is assigned to but never used
+    - ./home/admin.py:1:1: F401 'django.contrib.admin' imported but unused
+    - ./home/models.py:1:1: F401 'django.db.models' imported but unused
+    - ./home/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+    - ./iomha_prints/settings.py:18:5: F401 'env' imported but unused
+    - ./products/models.py:28:11: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./products/models.py:33:17: DJ01 Avoid using null=True on string-based fields such URLField.
+    - ./products/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+    - ./profiles/models.py:15:28: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./profiles/models.py:17:31: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./profiles/models.py:19:31: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./profiles/models.py:21:28: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./profiles/models.py:23:22: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./profiles/models.py:24:24: DJ01 Avoid using null=True on string-based fields such CharField.
+    - ./profiles/tests.py:1:1: F401 'django.test.TestCase' imported but unused
 
-    ![Script JS](documentation/testing/validation/??????)
-  </details>
-
-- [Python Validator](http://pep8online.com/)
-
-  <details>
-    <summary>?????? validation results</summary>
-
-    ![Project urls.py](documentation/testing/validation/??????????)
-  </details>
-
- 
 ### Manual Testing Test Cases and Results 
 
 - The link below details the test cases that were used, the results, and a cross-reference to the Feature ID that each test case exercised (click link to open pdf).  The test cases are primarily based on the User Story acceptance criteria that were used to test iterations of the code during development.
   
-  - <a href="?????" target="_blank">Manual Testing - Test Cases and Results</a>
+  - <a href="https://github.com/elainebroche-dev/pf5-iomha-prints/blob/main/documentation/testing/test-cases.pdf" target="_blank">Manual Testing - Test Cases and Results</a>
 
 ### Known bugs
 
-- To be written
+- Errors in add_artist.html and edit_artist.html when rendered : 
+    - Error: Bad value 'true' for attribute hidden on element textarea <br>
+  This html is coming from the summernote widget.  The application seems to be working ok for this widget but HTML validation is reporting the error.
 
-## Deployment  - leaving this here for now but all needs to be rewritten
+## Deployment 
 
 Detailed below are instructions on how to clone this project repository and the steps to configure and deploy the application.  
 
