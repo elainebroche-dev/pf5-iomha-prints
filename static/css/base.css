@@ -370,7 +370,7 @@ input[name='q']::placeholder {
     display: none;
 }
 
-#subtotal-str {
+.subtotal-str {
     font-weight: bold;
 }
 
@@ -464,7 +464,7 @@ input[name='q']::placeholder {
         display: flex;
     }
 
-    #subtotal-str {
+    .subtotal-str {
         display: none;
     }
 
