@@ -114,11 +114,10 @@
                 {% endfor %}
             </div>
 
-
             <div class="table-responsive rounded">
                 <table class="table table-sm table-borderless">
                     <tr>
-                        <td colspan="5" class="pt-5 text-right">
+                        <td class="pt-5 text-right">
                             <h6><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
                             <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
@@ -131,7 +130,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text-right">
+                        <td class="text-right">
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
