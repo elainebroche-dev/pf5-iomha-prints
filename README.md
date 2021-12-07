@@ -16,7 +16,7 @@ The Web Marketing strategies used by the project are :
 
 The structure and purpose of the Íomhá Prints project is based on the Code Institute Boutique Ado walkthrough example application.
 
-![Mockup](documentation/supp-images/amiresponsive.png)
+![Mockup](documentation/supp-images/amiresponsive-img.png)
 
 ## Index – Table of Contents
 * [User Experience (UX)](#user-experience-ux) 
