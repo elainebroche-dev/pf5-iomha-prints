@@ -2,9 +2,9 @@
 
 [View the live project here](https://pf5-iomha-prints.herokuapp.com/)
 
-The Íomhá Prints project is a B2C e-commerce application which sells art prints directly to end users.  The site aims to present customers with an attractive and intuitive online shopping experience and encourage return visits through features such as discounts, a newsletter, social media posts, and an easy to use user profile to record customer details.
+The Íomhá Prints project is a B2C e-commerce application which sells art prints directly to end customers.  The site aims to present users with an attractive and intuitive online shopping experience and encourage return visits through features such as discounts, a newsletter, social media posts, and an easy to use user profile function to save customer details.
 
-The site is implemented as a retail store where users can view, search and filter the products on offer, then select items to add to their shopping cart and purchase through a simple secure single payment.
+The site is implemented as a retail store where users can view, search and filter the products on offer, then select items to add to their shopping cart and purchase through a secure single payment.
 
 General users can view details of the prints available for purchase including bio information on the print artist, and can sign up to the company newletter. In addition, registered users can create a wishlist of prints they may be interested in and a profile to keep track of delivery details and order history.
 
@@ -121,11 +121,11 @@ The structure and purpose of the Íomhá Prints project is based on the Code Ins
   - US501 : Add a print
       - As a **site admin** I can **add a print** so that **I can sell new items in my store**
   - US502 : Edit / update details for a print
-      - As a **site admin** I can **edit / update details for a print** so that **I can change or amend it's title, image, discount setting and other attributes**
+      - As a **site admin** I can **edit / update details for a print** so that **I can change or amend the title, image, discount setting and other attributes**
   - US503 : Delete a print
       - As a **site admin** I can **delete a print** so that **I can remove the print for sale**
   - US504 : Edit / update details for a print size option
-      - As a **site admin** I can **edit / update details for a print size option** so that **I can change or amend it's price or dimensions**
+      - As a **site admin** I can **edit / update details for a print size option** so that **I can change or amend the price or dimensions**
   - US505 : Add an artist bio
       - As a **site admin** I can **add an artist bio** so that **I can give the site users background information on the artist**
   - US506 : Edit / update details for an artist bio
@@ -166,8 +166,10 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         The page layout, navigation bar, header, footer, colours and fonts have a consistent look and feel on all pages of the website to give the user an intuitive easy to use experience.  The navigation bar is responsive on multiple screen sizes - on smaller screens it coverts to a 'burger' menu style. 
         
+        <br><strong>Fig 01-A.  Desktop example</strong><br>
         ![F01 Large Screen](documentation/supp-images/f01-large-screen.png)
-
+        
+        <br><strong>Fig 01-B.  Tablet example</strong><br>
         ![F01 Small Screen](documentation/supp-images/f01-small-screen.png)
 
     -   __F02 - User logged in indicator__
@@ -686,7 +688,7 @@ Detailed below are instructions on how to clone this project repository and the 
     - Click on Import managed policy on rhs
 	- Search for S3 and select AmazonS3FullAccess and click on Import
 	- Go back and get the Bucket Policy ARN (generated when bucket was created)
-	- Change the Resource value from * to ARN bucket and it's contents - e.g :
+	- Change the Resource value from * to ARN bucket and its contents - e.g :
         "Resource": [
                     "arn:aws:s3:::pf5-iomha-prints",  (sensitive)
                     "arn:aws:s3:::pf5-iomha-prints/*"
