@@ -166,18 +166,20 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         The page layout, navigation bar, header, footer, colours and fonts have a consistent look and feel on all pages of the website to give the user an intuitive easy to use experience.  The navigation bar is responsive on multiple screen sizes - on smaller screens it coverts to a 'burger' menu style. 
         
-        <br><strong>Fig 01-A.  Desktop example</strong><br>
+        <br><strong>Fig 01-A.  Desktop example</strong><br><br>
         ![F01 Large Screen](documentation/supp-images/f01-large-screen.png)
         
-        <br><strong>Fig 01-B.  Tablet example</strong><br>
+        <br><strong>Fig 01-B.  Tablet example</strong><br><br>
         ![F01 Small Screen](documentation/supp-images/f01-small-screen.png)
 
     -   __F02 - User logged in indicator__
         
         The user can easily see if they are logged in from the user icon at the top right of the screen.  If not logged in the user icon appears as an outline and has the text "Account" underneath, if logged in, the user icon is filled in and the user's username (max 12 chars) appears under the icon.  
         
+        <br><strong>Fig 02-A.  User icon when user is not logged in</strong><br><br>
         ![F02 Logged Out](documentation/supp-images/f02-logged-out.png)
 
+        <br><strong>Fig 02-B.  User icon when user is logged in</strong><br><br>
         ![F02 Logged In](documentation/supp-images/f02-logged-in.png)
 
 
@@ -185,6 +187,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         The application home page includes an eye-catching carousel which displays a sample of the prints available for purchase on the site.  It also gives introductory content to clearly brief the user on the purpose of site and goal of of the company.  
         
+        <br><strong>Fig 03-A.  Home page</strong><br><br>
         ![F03 Home Page](documentation/supp-images/f03-home-page.png)
 
 
@@ -192,6 +195,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         The user can easily scroll through the list of prints available for purchase on the site by using the All Prints option in the navigation bar at the top of the screen. The list presented will show an image of the print and some details including title, category, number of likes and rating. A back-to-top button allows the user to quickly navigate back to the top of the screen.
         
+        <br><strong>Fig 04-A.  List of prints</strong><br><br>
         ![F04](documentation/supp-images/f04-list-of-prints.png)
 
 
@@ -201,22 +205,26 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         The number of matching results is shown on screen and results can be ordered by rating, category, or title.
         
+        <br><strong>Fig 05-A.  List of prints for Nature category</strong><br><br>
         ![F05](documentation/supp-images/f05-list-of-prints.png)
 
         In addition, results can be sorted by rating or by category using the navigation bar drop-down options under All Prints.  Alternatively, the sort box on the screen can sort by rating, category and print title.
 
+        <br><strong>Fig 05-B.  List of Nature prints sorted by rating</strong><br><br>
         ![F05](documentation/supp-images/f05-sort-options.png)
 
     -   __F06 - View Print Details__
         
         By clicking on a print the user can access the Print Details page which will display the image, category, rating, number of likes, artist name, print options (size and price) and from here they can select the size and quantity of print they want and add them to their cart.  
         
+        <br><strong>Fig 06-A.  Print details</strong><br><br>
         ![F06](documentation/supp-images/f06-print-detail.png)
 
     -   __F07 - View Artist Details__
         
         From the Print Detail page (F06 above) the user can click on the artist name and view a short bio of the artist associated with the print and learn a bit about their background and work.  
         
+        <br><strong>Fig 07-A.  Artist details</strong><br><br>
         ![F07](documentation/supp-images/f07-artist-detail.png)
 
 
@@ -224,14 +232,17 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         If the user is logged in when they visit a Print Detail page (F06 above) they will have the opportunity to 'like' the print.  Clicking on the 'heart' icon will toggle the like/unlike setting for that user for that print.  Liking a print will add that print to the user's wishlist.  The wishlist option is available from the navigation bar - but is only visible when the user is logged in.  Adding items to their withlist enables the user to save items for purchase later.   
         
+        <br><strong>Fig 08-A.  Print can be 'liked' from the print details page</strong><br><br>
         ![F08](documentation/supp-images/f08-likes.png)
 
+        <br><strong>Fig 08-B.  Clicking on Wishlist shows prints the user has 'liked'</strong><br><br>
         ![F08](documentation/supp-images/f08-wishlist.png)
 
     -   __F09 - Custom HTTP 404 and 500 response pages__
         
         To help support a consistent user-experience and handle unexpected events in a user-friendly manner, custom pages are displayed for any unexpected 404 or 500 HTTP response codes.  
         
+        <br><strong>Fig 09-A.  Custom 404 response page with link to Home</strong><br><br>
         ![F09 404 Response](documentation/supp-images/f09-404-response.png)
 
 
@@ -239,8 +250,10 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         Pop-up on-screen messages are used to let the user know the effects of their interactions with the application.  Events such as changing the contents of the shopping cart, submitting an order, logging in or out will result in a message appearing on screen to inform the user of what has happened, and if appropriate, give them an update on the contents of the shopping cart.
         
+        <br><strong>Fig 10-A.  Message to user to confirm login</strong><br><br>
         ![F10](documentation/supp-images/f10-toast-example-1.png)
 
+        <br><strong>Fig 10-B.  Message to confirm shoppign cart has been updated</strong><br><br>
         ![F10](documentation/supp-images/f10-toast-example-2.png)
     
     
@@ -250,10 +263,13 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         Users can register (sign-up) with the site, login (sign-in) and logout (sign-out).  Some features such as the wishlist are only available to logged in users (see F12 below for information on role based interactions).  When registering, users are asked to confirm their email addresses in order to activate the account.
         
+        <br><strong>Fig 11-A.  User Registration / Sign Up</strong><br><br>
         ![F11 Register](documentation/supp-images/f11-register.png)
         
+        <br><strong>Fig 11-B.  User Login / Sign In</strong><br><br>
         ![F11 Login](documentation/supp-images/f11-login.png)
-                      
+
+        <br><strong>Fig 11-C.  Logout / Sign Out</strong><br><br>           
         ![F11 Logout](documentation/supp-images/f11-logout.png)
 
     -   __F12 - Role based interactions__
@@ -262,8 +278,10 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         In addition, data managment tasks such as adding prints or artist information to the website, or changing pricing, are actions which can only be performed by a logged in admin (superuser).  
         
+        <br><strong>Fig 12-A.  Options under User Icon for general users</strong><br><br>
         ![F12 Profile](documentation/supp-images/f12-profile.png)
 
+        <br><strong>Fig 12-B.  Options under User Icon for site admin users</strong><br><br>
         ![F12 Management](documentation/supp-images/f12-print-management.png)
 
 
@@ -273,6 +291,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         By giving the user the option of storing their date of birth, this allows the company to track additional information about the user than could be used in marketing - for example offering a special discount on their birthday to encourage them to purchase.
         
+        <br><strong>Fig 13-A.  My Profile page</strong><br><br>
         ![F13 User Profile](documentation/supp-images/f13-profile-page.png)
 
 - **E-Commerce Related Features**
@@ -285,8 +304,10 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         By clicking on the shopping cart icon the user can view the shopping cart page.  From here they can adjust quanities of the items in the cart or remove them completely.  From this page the user can choose to return to continue shopping or proceed to checkout.
         
+        <br><strong>Fig 14-A.  Shopping Cart icon with current cost</strong><br><br>
         ![F14 Shopping Cart Icon](documentation/supp-images/f14-shopping-cart-icon.png)
 
+        <br><strong>Fig 14-B.  Shopping Cart page</strong><br><br>
         ![F14 Shopping Cart](documentation/supp-images/f14-shopping-cart.png)
     
     -   __F15 - Checkout and Secure Payments__
@@ -295,10 +316,13 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         Payments are securely handled by Stripe widgets in the application, and webhooks are used to ensure that transactions are handled correctly in the case of any problems encountered during payment processing.
         
+        <br><strong>Fig 15-A.  Checkout page</strong><br><br>
         ![F15 Checkout](documentation/supp-images/f15-checkout.png)
 
+        <br><strong>Fig 15-B.  Stripe events example</strong><br><br>
         ![F15 Stripe](documentation/supp-images/f15-stripe.png)
 
+        <br><strong>Fig 15-B.  Stripe webhooks example</strong><br><br>
         ![F15 Stripe](documentation/supp-images/f15-webhooks.png)
 
     -   __F16 - Order Confirmation and Order History__
@@ -307,10 +331,13 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         By accessing the My Profile page, users can view their order history.  
         
+        <br><strong>Fig 16-A.  Order Confirmation page</strong><br><br>
         ![F16 Order Confirmation](documentation/supp-images/f16-order-confirmation.png)
 
+        <br><strong>Fig 16-B.  Order Confirmation email</strong><br><br>
         ![F16 Order Confirmation Email](documentation/supp-images/f16-order-confirmation-email.png)
 
+        <br><strong>Fig 16-C.  Order History shown on My Profile page</strong><br><br>
         ![F16 Order History](documentation/supp-images/f16-order-history.png)
  
 
@@ -322,14 +349,17 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         Once a print is added it becomes visible to customers and can be added to their carts.  If a print is deleted it is removed from the site.  If the admin user attempts to delete a print they are first prompted to confirm the action, to avoid accidentally deleting a print.
         
+        <br><strong>Fig 17-A.  Add a Print</strong><br><br>
         ![F17 Add a print](documentation/supp-images/f17-add-print.png)
 
+        <br><strong>Fig 17-B.  Links to Edit and Delete Print</strong><br><br>
         ![F17 Edit or Delete a print](documentation/supp-images/f17-edit-delete-print.png)
     
     -   __F18 - Print Option Management__
         
         This feature is only available to site administrators. Admin users can edit the print options to update the dimension values or update pricing.  
         
+         <br><strong>Fig 18-A.  Edit Print Option</strong><br><br>
         ![F18 Print Option Management](documentation/supp-images/f18-print-option.png)
 
     -   __F19 - Artist Management__
@@ -338,8 +368,10 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
         Once an artist is added it becomes available to link to existing prints.  If an artist is deleted it is removed from the database and any linked prints will show as artist unknown.  If the admin user attempts to delete an artist they are first prompted to confirm the action, to avoid accidental deletions.
         
+        <br><strong>Fig 19-A.  Add an Artist</strong><br><br>
         ![F19 Add an artist](documentation/supp-images/f19-add-artist.png)
 
+        <br><strong>Fig 19-B.  Links to Edit and Delete an Artist</strong><br><br>
         ![F19 Edit or Delete an artist](documentation/supp-images/f19-edit-delete-artist.png)
     
 
@@ -368,8 +400,10 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         As part of the web marketing strategy for the application, functionality to subscribe to a company newsletter was added.  The subscribe feature is available in the footer of each page on the site.  The user simply has to enter an email address and click on the Subscribe button to sign up.  The subscription list is managed by mailchimp website https://mailchimp.com/.  
         
+        <br><strong>Fig 21-A.  Subscribe to newletter</strong><br><br>
         ![F21 Subscribe](documentation/supp-images/f21-subscribe.png)
 
+        <br><strong>Fig 21-B.  Extract of list of subscribers</strong><br><br>
         ![F21 Subscription List](documentation/supp-images/f21-subscription-list.png)
 
     -   __F22 - Facebook__
@@ -378,23 +412,28 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
         
         Íomhá Prints link to Facebook : https://www.facebook.com/%C3%8Domh%C3%A1-Prints-102662235595682See  
         
+        <br><strong>Fig 22-A.  Link to Facebook in site footer</strong><br><br>
         ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-link.png)
 
+        <br><strong>Fig 22-B.  Company Facebook page - example 1</strong><br><br>
         ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-1.png)
 
+        <br><strong>Fig 22-C.  Company Facebook page - example 2</strong><br><br>
         ![F22 Company Facebook page](documentation/supp-images/f22-company-facebook-page-2.png)
 
     -   __F23 - Privacy Policy__
         
         To address GDPR requirements, a privacy policy was generated using the website https://www.privacypolicygenerator.info/.  The policy was then downloaded and incorporated into a page within the Íomhá Prints application.  The privacy policy page can be access via a link on the footer of each page.
         
+        <br><strong>Fig 23-A.  Link to Privacy Policy in site footer</strong><br><br>
         ![F23 Privacy Policy Link](documentation/supp-images/f23-privacy-policy-link.png)
 
+        <br><strong>Fig 23-B.  Privacy Policy page</strong><br><br>
         ![F23 Privacy Policy](documentation/supp-images/f23-privacy-policy.png)
 
 -   __How these features support the user stories__
     
-    There are 38 User Stories in the [User Experience (UX)](#user-experience-ux) part of this document split between 6 Epics.  The existing features are listed above as F01 to F23.  Below is a traceability matrix cross-referencing the user stories with the features, illustrating which features support which stories :
+    In the [User Experience (UX)](#user-experience-ux) part of this document there are 38 User Stories split between 6 Epics.  The existing features are listed above as F01 to F23.  Below is a traceability matrix cross-referencing the user stories with the features, illustrating which features support which stories :
         
     ![User Story Feature Matrix](documentation/supp-images/traceability-matrix.png)
 
@@ -407,7 +446,7 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
 
 -   __Improvements to user interactions__
 
-    The prompte to confirm a delete of a print or artist is very basic and should be improved to fit in better with the overall look and feel of the website.  Similarly, the date picker controls on the artist bio management pages and on the My Profile page should be improved.
+    The prompt to confirm a delete of a print or artist is very basic and should be improved to fit in better with the overall look and feel of the website.  Similarly, the date picker controls on the artist bio management pages and on the My Profile page should be improved.
 
 -   __My Profile DOB__
 
@@ -452,6 +491,8 @@ The Íomhá Prints application uses a B2C e-commerce model, selling directly to 
       - The Print table replaces the Boutique Ado Product table and has been customized heavily to reflect the information stored for this application.  In addition to a relationship with the OrderLineItem table, the Print table links to a new table for Artist data and a Category table that is similar to the one used by Boutique Ado.
 
       - The PrintOption table is a new table that is used to store size and price options applicable to all print stock.  Like the PrintOption table, dimension data and price are also stored in the OrderLineItem table however there is no declared relationship between those data items and the dimesion and price data in the PrintOption table as the data in OrderLineItem records reflect a snapshot in time when a purchase was made whereas these items in the PrintOption table represent the current up-to-date values that are valid for new purchases.
+
+      - The Artist table is a new table used to store information on the artists linked to the prints.
 
 
     <details>
@@ -546,6 +587,9 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
 
 - Python Validation was performed using the command : python3 -m flake8.  No serious errors reported. Messages relevant to the project py files are as follows :
 
+    <details>
+    <summary>Python Validation Results</summary>
+
     - ./artists/tests.py:1:1: F401 'django.test.TestCase' imported but unused
     - ./artists/migrations/0001_initial.py:17:80: E501 line too long (117 > 79 characters)
     - ./artists/migrations/0001_initial.py:21:80: E501 line too long (82 > 79 characters)
@@ -574,6 +618,8 @@ The Epic, User Stories and Kanban board can be accessed here : [Iomha Print Agil
     - ./profiles/models.py:24:24: DJ01 Avoid using null=True on string-based fields such CharField.
     - ./profiles/tests.py:1:1: F401 'django.test.TestCase' imported but unused
 
+    </details>
+
 ### Manual Testing Test Cases and Results 
 
 - The link below details the test cases that were used, the results, and a cross-reference to the Feature ID that each test case exercised (click link to open pdf).  The test cases are primarily based on the User Story acceptance criteria that were used to test iterations of the code during development.
@@ -596,7 +642,9 @@ Detailed below are instructions on how to clone this project repository and the 
 4. Configure Amazon Web Services S3 to store static files and images
 5. Configure STRIPE config vars and webhooks
 
-### How to Clone the Repository 
+
+<details>
+<summary>How to Clone the Repository</summary>
 
 - Go to the https://github.com/elainebroche-dev/pf5-iomha-prints repository on GitHub 
 - Click the "Code" button to the right of the screen, click HTTPs and copy the link there
@@ -612,8 +660,11 @@ Detailed below are instructions on how to clone this project repository and the 
 
 - N.B. Any changes pushed to the master branch will take effect on the live project once the application is re-deployed from Heroku
 - N.B. Be careful not to upload DEBUG=True in the settings.py file to GitHub - this setting should only be used locally.
+</details>
 
-### Create Application and Postgres DB on Heroku
+<details>
+<summary>Create Application and Postgres DB on Heroku</summary>
+
 - Log in to Heroku at https://heroku.com - create an account if needed.
 - From the Heroku dashboard, click the Create new app button.  For a new account an icon will be visible on screen to allow you to Create an app, otherwise a link to this function is located under the New dropdown menu at the top right of the screen.
 - On the Create New App page, enter a unique name for the application and select region.  Then click Create app.
@@ -633,15 +684,21 @@ Detailed below are instructions on how to clone this project repository and the 
 - Set DEBUG flag to False in settings.py
 - Commit and push any local changes to GitHub.
 - In order to be able to run the application on localhost, add SECRECT_KEY and DATABASE_URL and their values to env.py
+</details>
 
-### Connect the Heroku app to the GitHub repository
+<details>
+<summary>Connect the Heroku app to the GitHub repository</summary>
+
 - Go to the Application Configuration page for the application on Heroku and click on the Deploy tab.
 - Select GitHub as the Deployment Method and if prompted, confirm that you want to connect to GitHub. Enter the name of the github repository (the one used for this project is (https://github.com/elainebroche-dev/pf5-iomha-prints) and click on Connect to link up the Heroku app to the GitHub repository code.
 - Scroll down the page and choose to either Automatically Deploy each time changes are pushed to GitHub, or Manually deploy - for this project Manual Deploy was selected.
 - The application can be run from the Application Configuration page by clicking on the Open App button.
 - The live link for this project is (https://pf5-iomha-prints.herokuapp.com/)
+</details>
 
-### Configure Amazon Web Services S3 to store static files and images
+<details>
+<summary>Configure Amazon Web Services S3 to store static files and images</summary>
+
 - Log on to AWS account on aws.amazon.com - create an account if necessary
 - From the dashboard access the S3 services
 - Create a new 'bucket', it is recommended to give this a name similar to your application to make it easy to remember and use, choose a region close to you, uncheck "Block all public access" and acknowledge that the bucket will be public.  Next, click on the new bucket to configure it.
@@ -649,21 +706,11 @@ Detailed below are instructions on how to clone this project repository and the 
 - Go to the permissions tab and make 3 changes to configure the bucket :
 
     - Step 1 Configure CORS : 
-        - Paste the following CORS configuration string :
-    	[
-            {
-                "AllowedHeaders": [
-                    "Authorization"
-                ],
-                "AllowedMethods": [
-                    "GET"
-                ],
-                "AllowedOrigins": [
-                    "*"
-                ],
-                "ExposeHeaders": []
-            }
-        ]
+        - Paste the following CORS configuration string : <br>
+    	[ { "AllowedHeaders": ["Authorization"],<br>
+                "AllowedMethods": ["GET"],<br>
+                "AllowedOrigins": ["*"],<br>
+                "ExposeHeaders": [] } ]<br>
 
     - Step 2 Generate Policy:
         - Go to the bucket policy area, click on Edit and click on policy generator.  
@@ -688,11 +735,11 @@ Detailed below are instructions on how to clone this project repository and the 
     - Click on Import managed policy on rhs
 	- Search for S3 and select AmazonS3FullAccess and click on Import
 	- Go back and get the Bucket Policy ARN (generated when bucket was created)
-	- Change the Resource value from * to ARN bucket and its contents - e.g :
-        "Resource": [
-                    "arn:aws:s3:::pf5-iomha-prints",  (sensitive)
-                    "arn:aws:s3:::pf5-iomha-prints/*"
-                ]
+	- Change the Resource value from * to ARN bucket and its contents - e.g : <br>
+        "Resource": [<br>
+                    "arn:aws:s3:::pf5-iomha-prints",  (sensitive)<br>
+                    "arn:aws:s3:::pf5-iomha-prints/*"<br>
+                ]<br>
 	- Click Next and then Review Policy
 	- Give the policy a name and click Create Policy
     - Attach the policy to the group you created as follows : Go to groups, click on your group, go to the Permissions tab, click Add permissions and select Attach policies, select the policy created on previous step and click Attach permissions
@@ -714,15 +761,20 @@ Detailed below are instructions on how to clone this project repository and the 
 - The custom_storages.py file that is part of this project will tell Django to use S3 to store static and media files when collectstatic is run
 - The remaining AWS configuration settings needed are already configured in this projects settings.py file
 - Go to the S3 dashboard and create a folder called media in the new bucket.  Specify grant public-read access on the folder and tick the checkbox to confirm.
+</details>
 
-### Configure STRIPE config vars and webhooks
+<details>
+<summary>Configure STRIPE config vars and webhooks</summary>
+
 - Log in to your Stripe account - create one if necessary
 - Add STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY to the Heroku config vars, assign these variables values from your Stripe account dashboard
 - Create a webhook endpoint for use with your applications.  On the stripe dashboard go to the Developers -> Webhooks area, click add endpoint, use the url of your Heroku application with '/checkout/wh/' tagged onto the end of the url string.  When configuring the endpoint, the events to register to listen to are payment_intent_succeeded and payment_intent_failed
 - Once the endpoint is set up get the signing secret for the webhooks and save this value as a Heroku config var called STRIPE_WH_SECRET.
+</details>
+<br>
 
-#### The live link to the application can be found here - [P5 Iomha Prints](https://pf5-iomha-prints.herokuapp.com/) 
-
+### The live link to the application can be found here - [P5 Iomha Prints](https://pf5-iomha-prints.herokuapp.com/) 
+<br>
 
 ## Credits 
 
