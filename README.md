@@ -1,4 +1,4 @@
-<h1 align="center">Íomhá Prints - Order Prints Online</h1>
+<h1 align="center">Iomha Prints - Order Prints Online</h1>
 
 [View the live project here](https://pf5-iomha-prints.herokuapp.com/)
 
